@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>购彩-26选5</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+// 页面跳转
+function dumpUrl(obj) {
+	var url = $(obj).attr('data');
+	window.location.href=url;
+}
+$(function() {
+	// 红球切换
+	$('.ul-ball-red li').click(function() {
+		var filename_arr = $(this).find('img').attr('src').split('.');
+		if(filename_arr[0].indexOf('red') != '-1') {
+			$(this).removeClass('white');
+			filename_arr[0] = filename_arr[0].substr(0, filename_arr[0].indexOf('red') - 1);
+		} else {
+			$(this).addClass('white');
+			filename_arr[0] = filename_arr[0] + '_red';
+		}
+		$(this).find('img').attr('src', filename_arr.join('.'));
+	});
+	// 切换tag
+	$(".tag-item").click(function() {
+		$(".tag-item").removeClass('this');
+		$(this).addClass('this');
+		$('dd').removeClass('this');
+		$('dd').eq($(".tag-item").index(this)).addClass('this');
+	});
+})
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' data='square.html' onclick='dumpUrl(this);'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>彩票广场</span></li>
+			<li class='nav-middle center fleft'>26选5</li>
+		</ul>
+		<img src="images/btn_yaoyiyao_n.png" class='shake'/>
+	</div>
+	<div class='main'>
+		<div class='ftc_26sel5 ftc'>
+			<div class='font-12rem width-100 fleft top clearfix bg-pink'>
+				<span class='fleft top-left'>第<span class='red'>20150403</span>期</span>
+				<span class='fright top-right'>停售时间：<span class='red'>2015-04-03 19:50:00</span></span>
+			</div>
+			<div class='tag clearfix'>
+				<ul class='fleft width-100 bg-white'>
+					<li class='fleft center tag-item this'><span class='fleft width-100'>直选</span></li>
+					<li class='fleft center tag-item'><span class='fleft width-100'>胆拖</span></li>
+					<li class='fleft center tag-item'><span class='fleft width-100'>好彩2</span></li>
+					<li class='fleft center tag-item'><span class='fleft width-100'>好彩3</span></li>
+					<li class='fright center random fillet-15 white bg-orange'><span>机选</span></li>
+				</ul>
+			</div>
+			<dl>
+				<dd class='this clearfix'>
+					<div class='fleft width-100 tborder'>
+						<p class='title-red font-12rem'>至少选择5个球</p>
+						<ul class='ul-ball-red fleft'>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>01</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>02</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>03</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>04</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>05</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>06</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>07</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>08</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>09</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>10</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>11</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>12</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>13</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>14</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>15</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>16</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>17</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>18</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>19</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>20</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>21</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>22</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>23</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>24</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>25</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>26</span></li>
+						</ul>
+					</div>
+				</dd>
+				<dd class='clearfix'>
+					<div class='fleft width-100 tborder'>
+						<p class='title-red font-12rem'>胆码区：我认为必出的红球<span class='gray'> [请选择1-4个胆码]</span></p>
+						<ul class='ul-ball-red fleft bborder'>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>01</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>02</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>03</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>04</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>05</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>06</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>07</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>08</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>09</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>10</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>11</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>12</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>13</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>14</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>15</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>16</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>17</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>18</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>19</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>20</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>21</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>22</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>23</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>24</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>25</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>26</span></li>
+						</ul>
+						<div class='clearfix'></div>
+						<p class='title-org font-12rem'>拖码区：我认为可能出的号码<span class='gray'> [请选择2-25个拖码]</span></p>
+						<ul class='ul-ball-red fleft'>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>01</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>02</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>03</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>04</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>05</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>06</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>07</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>08</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>09</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>10</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>11</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>12</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>13</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>14</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>15</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>16</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>17</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>18</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>19</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>20</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>21</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>22</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>23</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>24</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>25</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>26</span></li>
+						</ul>
+						<div class='clearfix'></div>
+					</div>
+				</dd>
+				<dd class='clearfix'>
+					<div class='fleft width-100 tborder'>
+						<p class='title-red font-12rem'>至少选择2个球</p>
+						<ul class='ul-ball-red fleft'>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>01</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>02</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>03</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>04</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>05</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>06</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>07</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>08</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>09</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>10</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>11</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>12</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>13</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>14</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>15</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>16</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>17</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>18</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>19</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>20</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>21</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>22</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>23</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>24</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>25</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>26</span></li>
+						</ul>
+					</div>
+				</dd>
+				<dd class='clearfix'>
+					<div class='fleft width-100 tborder'>
+						<p class='title-red font-12rem'>至少选择3个球</p>
+						<ul class='ul-ball-red fleft'>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>01</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>02</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>03</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>04</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>05</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>06</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>07</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>08</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>09</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>10</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>11</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>12</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>13</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>14</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>15</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>16</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>17</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>18</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>19</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>20</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>21</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>22</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>23</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>24</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>25</span></li>
+							<li class='center fleft fillet-25 relative ball-red'><img src='images/ball.png'/><span class='absolute'>26</span></li>
+						</ul>
+					</div>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div class='foot-nav bg-black fleft width-100 white'>
+		<ul>
+			<li class='nav-left fleft'><span class='center bg-brown fillet-5 fleft'>清 空</span></li>
+			<li class='nav-middle fleft'><p class='center red'>07,14,15,28,30,31<p class='center'>共1注  2元</p></li>
+			<li class='nav-right fright'><span class='center bg-red fillet-5 fright' data='payorder_one.html' onclick='dumpUrl(this);'>投 注</span></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>供应商</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		load_more(); // 加载更多
+		$("li").click(function() {
+			$("li").addClass("bborder");
+			$(this).removeClass("bborder");
+			$(".item-group").addClass("hidden");
+			$(".item-group").eq($(this).index()).removeClass("hidden");
+		});
+		$(".item").click(function() {
+			if( $(this).next().is(":hidden") ) {
+				$(this).children().eq(0).addClass("open");
+				$(this).next().show();
+			} else {
+				$(this).children().eq(0).removeClass("open");
+				$(this).next().hide();
+			}
+		});
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<div class="uf aborder search fillet-5" style="width:90%">
+			<input type="text" class="fleft uf-1 border-0"/><span class="fleft icon-search"></span>
+		</div>
+	</div>
+	
+	<div class='main'>
+		<div class="supplier">
+			<ul class="ul-tag tborder font-12rem uf width-100">
+				<li class="fleft center rborder uf-1">原材料</li><li class="fleft center rborder bborder uf-1">配件</li><li class="fleft center bborder uf-1">设备</li>
+			</ul>
+			<table class="width-100 font-10rem item-group">
+				<tr class="item">
+					<td class="center"><img src="images/supplier-1.png"/></td><td>联系人：张生<br/>联系电话：82112345</td><td><span class="font-12rem">飞翔木材批发</span><br/>江西南康<br/>本店有进口橡木</td>
+				</tr>
+				<tr class="item-child">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label>公司名：</label>飞翔木材批发</td><td rowspan="5" class="intro"><label class="fleft">简介：</label><p>本店有进口橡木、海棠木、黄花料、杂木等多种批发零售，品种齐全，质量上乘，欢迎新老顾客前来选购。</p></td></tr>
+							<tr><td><label>联系人：</label>张生</td></tr>
+							<tr><td><label>手机：</label>13538475912</td></tr>
+							<tr><td><label>电话：</label>0797-82118394</td></tr>
+							<tr><td><label class="fleft">地址：</label>赣州市南康区佳兴材料市场3栋2011号</td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td class="center"><img src="images/supplier-2.png"/></td><td>联系人：张生<br/>联系电话：82112345</td><td><span class="font-12rem">飞翔木材批发</span><br/>江西南康<br/>本店有进口橡木</td>
+				</tr>
+				<tr class="item-child">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label>公司名：</label>飞翔木材批发</td><td rowspan="5" class="intro"><label class="fleft">简介：</label><p>本店有进口橡木、海棠木、黄花料、杂木等多种批发零售，品种齐全，质量上乘，欢迎新老顾客前来选购。</p></td></tr>
+							<tr><td><label>联系人：</label>张生</td></tr>
+							<tr><td><label>手机：</label>13538475912</td></tr>
+							<tr><td><label>电话：</label>0797-82118394</td></tr>
+							<tr><td><label class="fleft">地址：</label>赣州市南康区佳兴材料市场3栋2011号</td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td class="center"><img src="images/supplier-1.png"/></td><td>联系人：张生<br/>联系电话：82112345</td><td><span class="font-12rem">飞翔木材批发</span><br/>江西南康<br/>本店有进口橡木</td>
+				</tr>
+				<tr class="item-child">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label>公司名：</label>飞翔木材批发</td><td rowspan="5" class="intro"><label class="fleft">简介：</label><p>本店有进口橡木、海棠木、黄花料、杂木等多种批发零售，品种齐全，质量上乘，欢迎新老顾客前来选购。</p></td></tr>
+							<tr><td><label>联系人：</label>张生</td></tr>
+							<tr><td><label>手机：</label>13538475912</td></tr>
+							<tr><td><label>电话：</label>0797-82118394</td></tr>
+							<tr><td><label class="fleft">地址：</label>赣州市南康区佳兴材料市场3栋2011号</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="width-100 font-12rem center item-group hidden">
+				<tr class="item">
+					<td class="center"><img src="images/supplier-2.png"/></td><td>联系人：张生<br/>联系电话：82112345</td><td><span class="font-12rem">飞翔木材批发</span><br/>江西南康<br/>本店有进口橡木</td>
+				</tr>
+				<tr class="item-child">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label>公司名：</label>飞翔木材批发</td><td rowspan="5" class="intro"><label class="fleft">简介：</label><p>本店有进口橡木、海棠木、黄花料、杂木等多种批发零售，品种齐全，质量上乘，欢迎新老顾客前来选购。</p></td></tr>
+							<tr><td><label>联系人：</label>张生</td></tr>
+							<tr><td><label>手机：</label>13538475912</td></tr>
+							<tr><td><label>电话：</label>0797-82118394</td></tr>
+							<tr><td><label class="fleft">地址：</label>赣州市南康区佳兴材料市场3栋2011号</td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td class="center"><img src="images/supplier-2.png"/></td><td>联系人：张生<br/>联系电话：82112345</td><td><span class="font-12rem">飞翔木材批发</span><br/>江西南康<br/>本店有进口橡木</td>
+				</tr>
+				<tr class="item-child">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label>公司名：</label>飞翔木材批发</td><td rowspan="5" class="intro"><label class="fleft">简介：</label><p>本店有进口橡木、海棠木、黄花料、杂木等多种批发零售，品种齐全，质量上乘，欢迎新老顾客前来选购。</p></td></tr>
+							<tr><td><label>联系人：</label>张生</td></tr>
+							<tr><td><label>手机：</label>13538475912</td></tr>
+							<tr><td><label>电话：</label>0797-82118394</td></tr>
+							<tr><td><label class="fleft">地址：</label>赣州市南康区佳兴材料市场3栋2011号</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="width-100 font-12rem center item-group hidden">
+				<tr class="item">
+					<td class="center"><img src="images/supplier-1.png"/></td><td>联系人：张生<br/>联系电话：82112345</td><td><span class="font-12rem">飞翔木材批发</span><br/>江西南康<br/>本店有进口橡木</td>
+				</tr>
+				<tr class="item-child">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label>公司名：</label>飞翔木材批发</td><td rowspan="5" class="intro"><label class="fleft">简介：</label><p>本店有进口橡木、海棠木、黄花料、杂木等多种批发零售，品种齐全，质量上乘，欢迎新老顾客前来选购。</p></td></tr>
+							<tr><td><label>联系人：</label>张生</td></tr>
+							<tr><td><label>手机：</label>13538475912</td></tr>
+							<tr><td><label>电话：</label>0797-82118394</td></tr>
+							<tr><td><label class="fleft">地址：</label>赣州市南康区佳兴材料市场3栋2011号</td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td class="center"><img src="images/supplier-2.png"/></td><td>联系人：张生<br/>联系电话：82112345</td><td><span class="font-12rem">飞翔木材批发</span><br/>江西南康<br/>本店有进口橡木</td>
+				</tr>
+				<tr class="item-child">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label>公司名：</label>飞翔木材批发</td><td rowspan="5" class="intro"><label class="fleft">简介：</label><p>本店有进口橡木、海棠木、黄花料、杂木等多种批发零售，品种齐全，质量上乘，欢迎新老顾客前来选购。</p></td></tr>
+							<tr><td><label>联系人：</label>张生</td></tr>
+							<tr><td><label>手机：</label>13538475912</td></tr>
+							<tr><td><label>电话：</label>0797-82118394</td></tr>
+							<tr><td><label class="fleft">地址：</label>赣州市南康区佳兴材料市场3栋2011号</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

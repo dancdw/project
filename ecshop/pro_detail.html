@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>产品详情</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+	$(function () {
+	      // Slideshow
+	      $("#slider").responsiveSlides({
+	    	auto:true,             // Boolean: 设置是否自动播放
+	    	speed:800,            // Integer: 动画持续时间，单位毫秒
+	    	timeout:2000,          // Integer: 图片之间切换的时间，单位毫秒
+	    	pager: true,           // Boolean: 是否显示页码
+	    	nav: false,             // Boolean: 是否显示左右导航箭头（即上翻下翻）
+	      });
+	      $("p span").click(function() { // 选择商品分类
+	    	  $(this).parent().find("span").removeClass("sel");
+	    	  $(this).addClass("sel");
+	      });
+	      $(".count").click(function() { // 选择数量
+	    	  var o = $(this).html();
+	    	  var num = parseInt($(".number").html());
+	    	  if(o == "+") {
+	    		  $(".number").html(num+1);
+	    	  } else {
+	    		  if(num <= 1){ return; }
+	    		  $(".number").html(num-1);
+	    	  }
+	      });
+	});
+	$(window).load(function() {
+  		// 轮转导航定位
+		$(".rslides_tabs").css("top", $(".top-nav").height() + $("#slider li").height() - 10);
+		var h = $(".top-nav").height() + $("#slider li").height() - $(".prev").height();
+		$(".prev").css("top", h);
+		$(".next").css("top", h);
+    });
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<span class="absolute title">商品详情</span>
+	</div>
+	
+	<div class="main">
+		<div class="pro_detail">
+			<ul id="slider">
+		        <li class="pic1"><img alt="图片加载中..." src="images/b1.jpg" /></li>
+		        <li class="pic2"><img alt="图片加载中..." src="images/b2.jpg" /></li>
+		        <li class="pic3"><img alt="图片加载中..." src="images/b3.jpg" /></li>
+		        <li class="pic4"><img alt="图片加载中..." src="images/b4.jpg" /></li>
+	    	</ul>
+	    	<div class="width-90 auto">
+	    		<div class="space_hx"></div>
+	    		<h1>美式乡村沙发经济型地中海田园风格小户型沙发</h1>
+	    		<p>编号：PJHT20013X</p>
+	    		<P class="red">￥1688.00-2199.00</P>
+	    		<P><label>颜色：</label><span class="aborder sel">柠檬黄</span><span class="aborder">珍珠白</span><span class="aborder">浅灰</span></P>
+	    		<P><label>尺寸：</label><span class="aborder">三人位</span><span class="aborder">单人位</span></P>
+	    		<table class="width-100 font-12rem">
+	    			<tr><td colspan="2"><label>品牌：</label>111</td></tr>
+	    			<tr><td><label>材质：</label>皮艺类，超纤皮</td><td><label>材质说明：</label>111</td></tr>
+	    			<tr><td><label>工艺：</label>铁皮</td><td><label>风格：</label>简约欧式</td></tr>
+	    			<tr><td><label>其他功能：</label>可拉升</td><td><label>包装件数：</label>1</td></tr>
+	    			<tr><td><label>外包装：</label>纸皮</td><td><label>包装形式：</label>整装</td></tr>
+	    			<tr><td colspan="2"><label>产地：</label>南康</td></tr>
+	    			<tr><td colspan="2"><label>描述：</label>我是描述</td></tr>
+	    		</table>
+	    	</div>
+	    	<div class="clearfix"><span class="button bg-gray fleft center" onclick="dumpUrl(this);" url-data="pro_images.html">细节展示</span><span class="button bg-gray fleft center" onclick="dumpUrl(this);" url-data="pro_comment.html">评价列表</span></div>
+	    	<div class="space_hx"></div>
+	    	<div class="buy fixed width-100">
+	    		<div class="width-90 auto white clearfix">
+	    			<label class="fleft">购买数量</label><span class="fleft center count">-</span><span class="fleft center number">1</span><span class="fleft center count">+</span><span class="fright" onclick="dumpUrl(this);" url-data="pro_cart.html">加入购物车</span>
+	    		</div>
+	    	</div>
+		</div>
+	</div>
+</body>
+</html>

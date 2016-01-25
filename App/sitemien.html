@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>站点风采</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+	// 页面跳转
+	function dumpUrl(obj) {
+		var url = $(obj).attr('data');
+		window.location.href=url;
+	}
+	$(function () {
+		  // Slideshow
+	      $("#slider").responsiveSlides({
+	    	auto:true,             // Boolean: 设置是否自动播放
+	    	speed:800,            // Integer: 动画持续时间，单位毫秒
+	    	timeout:2000,          // Integer: 图片之间切换的时间，单位毫秒
+	    	pager: true,           // Boolean: 是否显示页码
+	    	nav: true,             // Boolean: 是否显示左右导航箭头（即上翻下翻）
+	    	prevText: "prev",   		// String: 往前翻按钮的显示文本
+	    	nextText: "next",       	// String: 往后翻按钮的显示文本
+	      });
+	   	  
+	});
+	$(window).load(function() {
+		// 轮转导航定位
+ 	  	$(".rslides_tabs").css("top", $(document).height() - $(".main").innerHeight() + $("#slider li").height() - 20 );
+    	var h = $(document).height() - $(".main").innerHeight() + $("#slider li").height() / 2;
+    	$(".prev").css("top", h);
+    	$(".next").css("top", h);
+	});
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='square.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>彩票广场</span></li>
+			<li class='nav-middle center fleft'>站点风采</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='sitemien relative'>
+	    	<ul id="slider">
+		        <li class="pic1"><img alt="图片加载中..." src="images/message/bg.png" /></li>
+		        <li class="pic2"><img alt="图片加载中..." src="images/message/activity_bg.png" /></li>
+		        <li class="pic3"><img alt="图片加载中..." src="images/message/ad_1.png" /></li>
+		        <li class="pic3"><img alt="图片加载中..." src="images/message/ad_1.png" /></li>
+		        <li class="pic3"><img alt="图片加载中..." src="images/message/ad_1.png" /></li>
+	    	</ul>
+		  	<div class="clearfix"></div>
+		  	<table class="width-95 auto font-10rem">
+		  		<tr><td colspan="2" class="croci font-12rem">衡山站中福在线大厅</td><td>彩站编号 2489623</td></tr>
+		  		<tr><td>【彩站地址】</td><td>汕头市龙湖区衡水路17号锦龙大厦明珠广场</td><td rowspan="2"><img src="images/share/barcode.png"/></td></tr>
+		  		<tr><td>【彩站简介】</td><td>汕头市龙湖区衡水路17号锦龙大厦明珠广场汕头市龙湖区衡水路17号锦龙大厦明珠广场汕头市龙湖区衡水路17号锦龙大厦明珠广场</td></tr>
+		  	</table>
+		  	<div class='width-100 main-item clearfix tborder' onclick='dumpUrl(this);' data='ftc_dcball.html'><div class='title fleft'><img src="images/sitemien/icon_fengcai_1.png"/></div><div class='fleft relative bborder content'><span class='fweight'>双色球</span><br/>奖池累计金额：4亿4552万<br/><span class='font-10rem gray'>停售时间：2015-04-15 </span><span class='font-10rem red'>倒计时2小时30分17秒</span><span class='time absolute font-12rem'>第<span class='red'>2015043</span>期</span><span class='absolute go'><img src="images/sitemien/icon_fengcai_forward.png"/></span></div></div>
+		  	<div class='width-100 main-item clearfix' onclick='dumpUrl(this);' data='ftc_36sel7.html'><div class='title fleft'><img src="images/sitemien/icon_fengcai_2.png"/></div><div class='fleft relative bborder content'><span class='fweight'>36选7</span><br/>每注2元，最高奖500万<br/><span class='font-10rem gray'>停售时间：2015-04-15 </span><!-- <span class='font-12rem red'>倒计时2小时30分17秒</span> --><span class='time absolute font-12rem'>第<span class='red'>2015043</span>期</span><img src="images/sitemien/icon_fengcai_forward.png" class='absolute go'/></div></div>
+		  	<div class='width-100 main-item clearfix' onclick='dumpUrl(this);' data='ftc_26sel5.html'><div class='title fleft'><img src="images/sitemien/icon_fengcai_3.png"/></div><div class='fleft relative bborder content'><span class='fweight'>26选5</span><br/>每注2元，最高奖500万<br/><span class='font-10rem gray'>停售时间：2015-04-15 </span><!-- <span class='font-12rem red'>倒计时2小时30分17秒</span> --><span class='time absolute font-12rem'>第<span class='red'>2015043</span>期</span><img src="images/sitemien/icon_fengcai_forward.png" class='absolute go'/></div></div>
+		  	<div class='width-100 main-item clearfix' onclick='dumpUrl(this);' data='ftc_3d.html'><div class='title fleft'><img src="images/sitemien/icon_fengcai_4.png"/></div><div class='fleft relative bborder content'><span class='fweight'>3D</span><br/>彩站编号：44015268<br/><span class='font-10rem red'>本期已截止，等待新开期 </span><!-- <span class='font-12rem red'>倒计时2小时30分17秒</span> --><span class='time absolute font-12rem'>第<span class='red'>2015043</span>期</span><img src="images/sitemien/icon_fengcai_forward.png" class='absolute go'/></div></div>
+		  	<div class='width-100 main-item clearfix' onclick='dumpUrl(this);' data='ftc_haocai1.html'><div class='title fleft'><img src="images/sitemien/icon_fengcai_5.png"/></div><div class='fleft relative bborder content'><span class='fweight'>好彩1</span><br/>每注2元，高中奖几率，好运爆棚<br/><span class='font-10rem gray'>停售时间：2015-04-15 </span><!-- <span class='font-12rem red'>倒计时2小时30分17秒</span> --><span class='time absolute font-12rem'>第<span class='red'>2015043</span>期</span><img src="images/sitemien/icon_fengcai_forward.png" class='absolute go'/></div></div>
+		</div>	
+	</div>
+	
+	<div class='foot-nav bg-black width-100 fleft white'>
+		<ul>
+			<li class='nav-item center fleft' onclick='dumpUrl(this);' data='square.html'><img src='images/public/nav_square.png'/><br/>彩票广场</li>
+			<li class='nav-item center fleft' onclick='dumpUrl(this);' data='lotteryabout.html'><img src='images/public/nav_aboutme.png'/><br/>开奖公告</li>
+			<li class='nav-item center fleft' onclick='dumpUrl(this);' data='message.html'><img src='images/public/nav_message.png'/><br/>彩票资讯</li>
+			<li class='nav-item center fleft' onclick='dumpUrl(this);' data='mylottery.html'><img src='images/public/nav_my.png'/><br/>我的彩票</li>
+			<li class='nav-item center fleft' onclick='dumpUrl(this);' data='more.html'><img src='images/public/nav_more.png'/><br/>更 多</li>
+		</ul>
+	</div>
+</body>
+</html>

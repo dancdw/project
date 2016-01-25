@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>产品列表</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$("li").click(function() {
+			$("li").removeClass("sel");
+			$(this).addClass("sel");
+			$("dd").addClass("hidden");
+			$("dd").eq($(this).index()).removeClass("hidden");
+		});
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<div class="uf aborder search fillet-5" style="width:90%">
+			<input type="text" class="fleft uf-1 border-0"/><span class="fleft icon-search"></span>
+		</div>
+	</div>
+	<div class='main'>
+		<div class="product">
+			<ul class="ul-tag font-12rem clearfix">
+				<li class="fleft center bg-gray sel">促销</li><li class="fleft center bg-gray">销量</li><li class="fleft center bg-gray">热度</li><li class="fleft center bg-gray">时间</li>
+			</ul>
+			<table class="font-12rem width-100">
+				<tr class="tborder" onclick="dumpUrl(this);" url-data="pro_detail.html"><td><img src="images/1.jpg"/></td><td><h1 class="font-16rem">沙发一</h1><p class="font-10rem">编号：20214212</p><span class="red font-16rem">￥2468.00</span><span class="bg-red white type">特色</span><br/><span class="gray">关注度 42152</span><span class="gray"> 销售量 3250</span></td></tr>
+				<tr class="tborder" onclick="dumpUrl(this);" url-data="pro_detail.html"><td><img src="images/2.jpg"/></td><td><h1 class="font-16rem">沙发二</h1><p class="font-10rem">编号：20214212</p><span class="red font-16rem">￥2468.00</span><span class="bg-red white type">特价</span><br/><span class="gray">关注度 42152</span><span class="gray"> 销售量 3250</span></td></tr>
+				<tr class="tborder" onclick="dumpUrl(this);" url-data="pro_detail.html"><td><img src="images/3.jpg"/></td><td><h1 class="font-16rem">沙发二</h1><p class="font-10rem">编号：20214212</p><span class="red font-16rem">￥2468.00</span><span class="bg-red white type">套餐</span><br/><span class="gray">关注度 42152</span><span class="gray"> 销售量 3250</span></td></tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

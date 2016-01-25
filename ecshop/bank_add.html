@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>添加银行卡</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<span class="absolute title">添加银行卡</span>
+	</div>
+	
+	<div class="main">
+		<div class="bank bank-add">
+			<div class="space_hx bg-gray"></div>
+			<table class="font-12rem width-100">
+				<tr class="bborder"><td class="right"><label>银行类型：</label></td><td><input type="radio" id="one" name="type"/><label for="one">收款银行（账户）</label><input type="radio" id="two" name="type"/><label for="two">付款银行（账户）</label></td></tr>
+				<tr class="bborder"><td class="right"><label>所属银行：</label></td><td><select class="font-12rem"><option>中国银行</option><option>中国工商银行</option><option>邮政储蓄</option></select></td></tr>
+				<tr class="bborder"><td class="right"><label>卡号：</label></td><td><input type="text" class="width-100 font-12rem"/></td></tr>
+				<tr class="bborder"><td class="right"><label>开户人：</label></td><td><input type="text" class="width-100 font-12rem"/></td></tr>
+				<tr class="bborder"><td class="right"><label>开户地址：</label></td><td><input type="text" class="width-100 font-12rem"/></td></tr>
+				<tr class="bborder"><td class="right ftop"><label>备注：</label></td><td><textarea class="width-100 font-14rem" rows="3"/></textarea></td></tr>
+				<tr><td class="center" colspan="2"><button>提交</button></td></tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

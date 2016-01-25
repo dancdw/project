@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>提现</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+	// 页面跳转
+	function dumpUrl(obj) {
+		var url = $(obj).attr('data');
+		window.location.href=url;
+	}
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' data='myaccount.html' onclick='dumpUrl(this);'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>我的账户</span></li>
+			<li class='nav-middle center fleft'>提现</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='carrycash'>
+			<div class='input-group clearfix'>
+				<div class='title'>本次从账户提现<span class='orange font-26rem'>10元</span></div>
+				<input type='text' placeholder='本平台设置的支付密码' class='width-100'/>
+			</div>
+			<div class='input-group bg-white verify clearfix aborder'><input type='text' placeholder='验证码'/><span class='verify-code bg-pink orange fright center lborder'>获取验证码</span></div>	
+			<div class='input-group remember border-0 clearfix font-10rem'><span class='str fleft'>注册手机号码获取验证码</span><span class='fright blue' data='paypwd_find.html' onclick='dumpUrl(this);'>忘记支付密码？</span></div>
+			<div class='space_hx'></div>	
+			<div class='input-group'><button class='submit-btn-red fillet-2' data='carrycash_fail.html' onclick='dumpUrl(this);'>提 交</button></div>
+		</div>
+	</div>
+</body>
+</html>

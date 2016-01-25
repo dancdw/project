@@ -1,0 +1,608 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>站点风采</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<script src="js/jquery1.42.min.js" type="text/jscript"></script>
+<script src="js/jquery.superslide.2.1.1.js" type="text/jscript"></script>
+
+<script src="js/jquery-1.4a2.min.js" type="text/javascript"></script>
+<script src="js/jquery.Imgshow-1.2.1.min.js" type="text/javascript"></script>
+<link href="css/city.css" rel="stylesheet" type="text/css">
+<script src="js/city.js" type="text/jscript"></script>
+</head>
+
+<body>
+<div id='bg'></div>
+<dl id="clist">
+	<dt class='close-1'></dt>
+    <dt class="quyu"><span>直辖市</span></dt>
+    <dt>直辖市</dt><dd><a href="javascript:void(0)">北京</a><a href="javascript:void(0)">上海</a><a href="javascript:void(0)">天津</a><a href="javascript:void(0)">重庆</a></dd>
+    <dt class="quyu"><span>华东</span></dt>
+    <dt>山东</dt><dd><a href="javascript:void(0)">青岛</a><a href="javascript:void(0)">济南</a><a href="javascript:void(0)">烟台</a><a href="javascript:void(0)">潍坊</a><a href="javascript:void(0)">临沂</a><a href="javascript:void(0)">淄博</a><a href="javascript:void(0)">济宁</a><a href="javascript:void(0)">泰安</a><a href="javascript:void(0)">聊城</a><a href="javascript:void(0)">威海</a><a href="javascript:void(0)">枣庄</a><a href="javascript:void(0)">德州</a><a href="javascript:void(0)">日照</a><a href="javascript:void(0)">东营</a><a href="javascript:void(0)">菏泽</a><a href="javascript:void(0)">滨州</a><a href="javascript:void(0)">莱芜</a><a href="javascript:void(0)">章丘</a><a href="javascript:void(0)">垦利</a><a href="javascript:void(0)">诸城</a></dd>
+    <dt>江苏</dt><dd><a href="javascript:void(0)">苏州</a><a href="javascript:void(0)">南京</a><a href="javascript:void(0)">无锡</a><a href="javascript:void(0)">常州</a><a href="javascript:void(0)">徐州</a><a href="javascript:void(0)">南通</a><a href="javascript:void(0)">扬州</a><a href="javascript:void(0)">盐城</a><a href="javascript:void(0)">淮安</a><a href="javascript:void(0)">连云港</a><a href="javascript:void(0)">泰州</a><a href="javascript:void(0)">宿迁</a><a href="javascript:void(0)">镇江</a><a href="javascript:void(0)">沭阳</a><a href="javascript:void(0)">大丰</a></dd>
+    <dt>浙江</dt><dd><a href="javascript:void(0)">杭州</a><a href="javascript:void(0)">宁波</a><a href="javascript:void(0)">温州</a><a href="javascript:void(0)">金华</a><a href="javascript:void(0)">嘉兴</a><a href="javascript:void(0)">台州</a><a href="javascript:void(0)">绍兴</a><a href="javascript:void(0)">湖州</a><a href="javascript:void(0)">丽水</a><a href="javascript:void(0)">衢州</a><a href="javascript:void(0)">舟山</a><a href="javascript:void(0)">乐清</a><a href="javascript:void(0)">瑞安</a><a href="javascript:void(0)">义乌</a></dd>
+    <dt>安徽</dt><dd><a href="javascript:void(0)">合肥</a><a href="javascript:void(0)">芜湖</a><a href="javascript:void(0)">蚌埠</a><a href="javascript:void(0)">阜阳</a><a href="javascript:void(0)">淮南</a><a href="javascript:void(0)">安庆</a><a href="javascript:void(0)">宿州</a><a href="javascript:void(0)">六安</a><a href="javascript:void(0)">淮北</a><a href="javascript:void(0)">滁州</a><a href="javascript:void(0)">马鞍山</a><a href="javascript:void(0)">铜陵</a><a href="javascript:void(0)">宣城</a><a href="javascript:void(0)">亳州</a><a href="javascript:void(0)">黄山</a><a href="javascript:void(0)">池州</a><a href="javascript:void(0)">巢湖</a><a href="javascript:void(0)">和县</a><a href="javascript:void(0)">霍邱</a><a href="javascript:void(0)">桐城</a></dd>
+    <dt class="quyu"><span>华南</span></dt>
+    <dt>广东</dt><dd><a href="javascript:void(0)">深圳</a><a href="javascript:void(0)">广州</a><a href="javascript:void(0)">东莞</a><a href="javascript:void(0)">佛山</a><a href="javascript:void(0)">中山</a><a href="javascript:void(0)">珠海</a><a href="javascript:void(0)">惠州</a><a href="javascript:void(0)">江门</a><a href="javascript:void(0)">汕头</a><a href="javascript:void(0)">湛江</a><a href="javascript:void(0)">肇庆</a><a href="javascript:void(0)">茂名</a><a href="javascript:void(0)">揭阳</a><a href="javascript:void(0)">梅州</a><a href="javascript:void(0)">清远</a><a href="javascript:void(0)">韶关</a><a href="javascript:void(0)">河源</a><a href="javascript:void(0)">云浮</a><a href="javascript:void(0)">汕尾</a><a href="javascript:void(0)">潮州</a><a href="javascript:void(0)">台山</a><a href="javascript:void(0)">阳春</a><a href="javascript:void(0)">顺德</a></dd>
+    <dt>福建</dt><dd><a href="javascript:void(0)">福州</a><a href="javascript:void(0)">厦门</a><a href="javascript:void(0)">泉州</a><a href="javascript:void(0)">莆田</a><a href="javascript:void(0)">漳州</a><a href="javascript:void(0)">宁德</a><a href="javascript:void(0)">三明</a><a href="javascript:void(0)">南平</a><a href="javascript:void(0)">龙岩</a><a href="javascript:void(0)">武夷山</a></dd>
+    <dt>广西</dt><dd><a href="javascript:void(0)">南宁</a><a href="javascript:void(0)">柳州</a><a href="javascript:void(0)">桂林</a><a href="javascript:void(0)">玉林</a><a href="javascript:void(0)">梧州</a><a href="javascript:void(0)">北海</a><a href="javascript:void(0)">贵港</a><a href="javascript:void(0)">钦州</a><a href="javascript:void(0)">百色</a><a href="javascript:void(0)">河池</a><a href="javascript:void(0)">来宾</a><a href="javascript:void(0)">贺州</a><a href="javascript:void(0)">防城港</a><a href="javascript:void(0)">崇左</a></dd>
+    <dt>海南</dt><dd><a href="javascript:void(0)">海口</a><a href="javascript:void(0)">三亚</a><a href="javascript:void(0)">五指山</a><a href="javascript:void(0)">三沙</a></dd>
+    <dt class="quyu"><span>中南</span></dt>
+    <dt>河南</dt><dd><a href="javascript:void(0)">郑州</a><a href="javascript:void(0)">洛阳</a><a href="javascript:void(0)">新乡</a><a href="javascript:void(0)">南阳</a><a href="javascript:void(0)">许昌</a><a href="javascript:void(0)">平顶山</a><a href="javascript:void(0)">安阳</a><a href="javascript:void(0)">焦作</a><a href="javascript:void(0)">商丘</a><a href="javascript:void(0)">开封</a><a href="javascript:void(0)">濮阳</a><a href="javascript:void(0)">周口</a><a href="javascript:void(0)">信阳</a><a href="javascript:void(0)">驻马店</a><a href="javascript:void(0)">漯河</a><a href="javascript:void(0)">三门峡</a><a href="javascript:void(0)">鹤壁</a><a href="javascript:void(0)">济源</a><a href="javascript:void(0)">明港</a><a href="javascript:void(0)">鄢陵</a><a href="javascript:void(0)">禹州</a><a href="javascript:void(0)">长葛</a></dd>
+    <dt>湖北</dt><dd><a href="javascript:void(0)">武汉</a><a href="javascript:void(0)">宜昌</a><a href="javascript:void(0)">襄阳</a><a href="javascript:void(0)">荆州</a><a href="javascript:void(0)">十堰</a><a href="javascript:void(0)">黄石</a><a href="javascript:void(0)">孝感</a><a href="javascript:void(0)">黄冈</a><a href="javascript:void(0)">恩施</a><a href="javascript:void(0)">荆门</a><a href="javascript:void(0)">咸宁</a><a href="javascript:void(0)">鄂州</a><a href="javascript:void(0)">随州</a><a href="javascript:void(0)">潜江</a><a href="javascript:void(0)">天门</a><a href="javascript:void(0)">仙桃</a><a href="javascript:void(0)">神农架</a></dd>
+    <dt>湖南</dt><dd><a href="javascript:void(0)">长沙</a><a href="javascript:void(0)">株洲</a><a href="javascript:void(0)">益阳</a><a href="javascript:void(0)">常德</a><a href="javascript:void(0)">衡阳</a><a href="javascript:void(0)">湘潭</a><a href="javascript:void(0)">岳阳</a><a href="javascript:void(0)">郴州</a><a href="javascript:void(0)">邵阳</a><a href="javascript:void(0)">怀化</a><a href="javascript:void(0)">永州</a><a href="javascript:void(0)">娄底</a><a href="javascript:void(0)">湘西</a><a href="javascript:void(0)">张家界</a></dd>
+    <dt>江西</dt><dd><a href="javascript:void(0)">南昌</a><a href="javascript:void(0)">赣州</a><a href="javascript:void(0)">九江</a><a href="javascript:void(0)">宜春</a><a href="javascript:void(0)">吉安</a><a href="javascript:void(0)">上饶</a><a href="javascript:void(0)">萍乡</a><a href="javascript:void(0)">抚州</a><a href="javascript:void(0)">景德镇</a><a href="javascript:void(0)">新余</a><a href="javascript:void(0)">鹰潭</a><a href="javascript:void(0)">永新</a></dd>
+    <dt class="quyu"><span>东北</span></dt>
+    <dt>辽宁</dt><dd><a href="javascript:void(0)">沈阳</a><a href="javascript:void(0)">大连</a><a href="javascript:void(0)">鞍山</a><a href="javascript:void(0)">抚顺</a><a href="javascript:void(0)">营口</a><a href="javascript:void(0)">盘锦</a><a href="javascript:void(0)">朝阳</a><a href="javascript:void(0)">丹东</a><a href="javascript:void(0)">本溪</a><a href="javascript:void(0)">葫芦岛</a><a href="javascript:void(0)">铁岭</a><a href="javascript:void(0)">阜新</a><a href="javascript:void(0)">庄河</a><a href="javascript:void(0)">瓦房店</a></dd>
+    <dt>黑龙江</dt><dd><a href="javascript:void(0)">哈尔滨</a><a href="javascript:void(0)">大庆</a><a href="javascript:void(0)">齐齐哈尔</a><a href="javascript:void(0)">牡丹江</a><a href="javascript:void(0)">绥化</a><a href="javascript:void(0)">佳木斯</a><a href="javascript:void(0)">鸡西</a><a href="javascript:void(0)">双鸭山</a><a href="javascript:void(0)">鹤岗</a><a href="javascript:void(0)">黑河</a><a href="javascript:void(0)">伊春</a><a href="javascript:void(0)">七台河</a><a href="javascript:void(0)">大兴安岭</a></dd>
+    <dt>吉林</dt><dd><a href="javascript:void(0)">长春</a><a href="javascript:void(0)">吉林</a><a href="javascript:void(0)">四平</a><a href="javascript:void(0)">延边</a><a href="javascript:void(0)">松原</a><a href="javascript:void(0)">白城</a><a href="javascript:void(0)">通化</a><a href="javascript:void(0)">白山</a><a href="javascript:void(0)">辽源</a></dd>
+    <dt class="quyu"><span>西南</span></dt>
+    <dt>四川</dt><dd><a href="javascript:void(0)">成都</a><a href="javascript:void(0)">德阳</a><a href="javascript:void(0)">南充</a><a href="javascript:void(0)">宜宾</a><a href="javascript:void(0)">自贡</a><a href="javascript:void(0)">乐山</a><a href="javascript:void(0)">泸州</a><a href="javascript:void(0)">达州</a><a href="javascript:void(0)">内江</a><a href="javascript:void(0)">遂宁</a><a href="javascript:void(0)">攀枝花</a><a href="javascript:void(0)">眉山</a><a href="javascript:void(0)">广安</a><a href="javascript:void(0)">资阳</a><a href="javascript:void(0)">凉山</a><a href="javascript:void(0)">广元</a><a href="javascript:void(0)">雅安</a><a href="javascript:void(0)">巴中</a><a href="javascript:void(0)">阿坝</a><a href="javascript:void(0)">甘孜</a></dd>
+    <dt>云南</dt><dd><a href="javascript:void(0)">昆明</a><a href="javascript:void(0)">曲靖</a><a href="javascript:void(0)">大理</a><a href="javascript:void(0)">红河</a><a href="javascript:void(0)">玉溪</a><a href="javascript:void(0)">丽江</a><a href="javascript:void(0)">文山</a><a href="javascript:void(0)">楚雄</a><a href="javascript:void(0)">西双版纳</a><a href="javascript:void(0)">昭通</a><a href="javascript:void(0)">德宏</a><a href="javascript:void(0)">普洱</a><a href="javascript:void(0)">保山</a><a href="javascript:void(0)">临沧</a><a href="javascript:void(0)">迪庆</a><a href="javascript:void(0)">怒江</a></dd>
+    <dt>贵州</dt><dd><a href="javascript:void(0)">贵阳</a><a href="javascript:void(0)">黔南</a><a href="javascript:void(0)">六盘水</a><a href="javascript:void(0)">毕节</a><a href="javascript:void(0)">铜仁</a><a href="javascript:void(0)">安顺</a><a href="javascript:void(0)">黔西南</a></dd>
+    <dt>西藏</dt><dd><a href="javascript:void(0)">拉萨</a><a href="javascript:void(0)">日喀则</a><a href="javascript:void(0)">山南</a><a href="javascript:void(0)">林芝</a><a href="javascript:void(0)">昌都</a><a href="javascript:void(0)">那曲</a><a href="javascript:void(0)">阿里</a></dd>
+    <dt class="quyu"><span>华北</span></dt>
+    <dt>河北</dt><dd><a href="javascript:void(0)">石家庄</a><a href="javascript:void(0)">保定</a><a href="javascript:void(0)">唐山</a><a href="javascript:void(0)">廊坊</a><a href="javascript:void(0)">邯郸</a><a href="javascript:void(0)">秦皇岛</a><a href="javascript:void(0)">沧州</a><a href="javascript:void(0)">邢台</a><a href="javascript:void(0)">衡水</a><a href="javascript:void(0)">张家口</a><a href="javascript:void(0)">承德</a><a href="javascript:void(0)">定州</a><a href="javascript:void(0)">馆陶</a><a href="javascript:void(0)">张北</a><a href="javascript:void(0)">赵县</a><a href="javascript:void(0)">正定</a></dd>
+    <dt>山西</dt><dd><a href="javascript:void(0)">太原</a><a href="javascript:void(0)">临汾</a><a href="javascript:void(0)">运城</a><a href="javascript:void(0)">晋中</a><a href="javascript:void(0)">长治</a><a href="javascript:void(0)">晋城</a><a href="javascript:void(0)">阳泉</a><a href="javascript:void(0)">吕梁</a><a href="javascript:void(0)">忻州</a><a href="javascript:void(0)">朔州</a><a href="javascript:void(0)">临猗</a><a href="javascript:void(0)">清徐</a></dd>
+    <dt>内蒙古</dt>
+    <dd><a href="javascript:void(0)">呼和浩特</a><a href="javascript:void(0)">包头</a><a href="javascript:void(0)">赤峰</a><a href="javascript:void(0)">鄂尔多斯</a><a href="javascript:void(0)">通辽</a><a href="javascript:void(0)">呼伦贝尔</a><a href="javascript:void(0)">巴彦淖尔市</a><a href="javascript:void(0)">乌兰察布</a><a href="javascript:void(0)">锡林郭勒盟</a><a href="javascript:void(0)">兴安盟</a><a href="javascript:void(0)">乌海</a><a href="javascript:void(0)">阿拉善盟</a><a href="javascript:void(0)">海拉尔</a></dd>
+    <dt class="quyu"><span>西北</span></dt>
+    <dt>陕西</dt>
+    <dd><a href="javascript:void(0)">西安</a><a href="javascript:void(0)">咸阳</a><a href="javascript:void(0)">宝鸡</a><a href="javascript:void(0)">渭南</a><a href="javascript:void(0)">汉中</a><a href="javascript:void(0)">榆林</a><a href="javascript:void(0)">延安</a><a href="javascript:void(0)">安康</a><a href="javascript:void(0)">商洛</a><a href="javascript:void(0)">铜川</a></dd>
+    <dt>新疆</dt>
+    <dd><a href="javascript:void(0)">乌鲁木齐</a><a href="javascript:void(0)">昌吉</a><a href="javascript:void(0)">巴音郭楞</a><a href="javascript:void(0)">伊犁</a><a href="javascript:void(0)">阿克苏</a><a href="javascript:void(0)">喀什</a><a href="javascript:void(0)">哈密</a><a href="javascript:void(0)">克拉玛依</a><a href="javascript:void(0)">博尔塔拉</a><a href="javascript:void(0)">吐鲁番</a><a href="javascript:void(0)">石河子</a><a href="javascript:void(0)">克孜勒苏</a><a href="javascript:void(0)">阿拉尔</a><a href="javascript:void(0)">五家渠</a><a href="javascript:void(0)">图木舒克</a><a href="javascript:void(0)">库尔勒</a></dd>
+    <dt>甘肃</dt>
+    <dd><a href="javascript:void(0)">兰州</a><a href="javascript:void(0)">天水</a><a href="javascript:void(0)">白银</a><a href="javascript:void(0)">庆阳</a><a href="javascript:void(0)">平凉</a><a href="javascript:void(0)">酒泉</a><a href="javascript:void(0)">张掖</a><a href="javascript:void(0)">武威</a><a href="javascript:void(0)">定西</a><a href="javascript:void(0)">金昌</a><a href="javascript:void(0)">陇南</a><a href="javascript:void(0)">临夏</a><a href="javascript:void(0)">嘉峪关</a><a href="javascript:void(0)">甘南</a></dd>
+    <dt>宁夏</dt>
+    <dd><a href="javascript:void(0)">银川</a><a href="javascript:void(0)">吴忠</a><a href="javascript:void(0)">石嘴山</a><a href="javascript:void(0)">中卫</a><a href="javascript:void(0)">固原</a></dd>
+    <dt>青海</dt>
+    <dd><a href="javascript:void(0)">西宁</a><a href="javascript:void(0)">海西</a><a href="javascript:void(0)">海北</a><a href="javascript:void(0)">果洛</a><a href="javascript:void(0)">海东</a><a href="javascript:void(0)">黄南</a><a href="javascript:void(0)">玉树</a><a href="javascript:void(0)">海南</a></dd>
+    <dt class="quyu"><span>其他</span></dt>
+    <dt>其他</dt>
+    <dd><a href="javascript:void(0)">香港</a><a href="javascript:void(0)">澳门</a><a href="javascript:void(0)">台湾</a><a href="javascript:void(0)">钓鱼岛</a><a href="javascript:void(0)">其他</a></dd>
+</dl>
+<div class="topbox">
+    <div class="topboxNr">
+        <span><a href="login.html">登录</a></span>
+        <span><a href="regist.html">免费注册</a></span>
+        <span class="org"><a href="my.html">我的彩票</a></span>
+        <p class="cen1 org bold500">欢迎来到中民福彩！</p>
+        <p class="right red">客服电话：400-990-360 </p>
+    </div>
+</div>
+
+<div class="logobox">
+	<div class="box1">
+    	<img class="fleft" src="images/logo.png">
+        <div class="fleft Ctext wz">
+            <div class="gray40">汕头市</div>
+            <div class="org change-city"><a href="#">[切换城市]</a></div>
+        </div>
+        <img class="fright" src="images/index1.png">
+    </div>
+</div>
+
+<div class="Navbox">
+<script>
+$(function(){
+	$("#Nav li").mouseover(function(){
+		$("#Nav li").removeClass("this");
+		$(this).addClass("this");
+		var n = $("#Nav li").index($(this));
+		$(".tagContent").hide();
+		$(".tagContent").eq(n).show();
+	})
+})
+</script>
+        <ul class="box1" id="Nav">
+            <a href="index.html"><li class="this">首页</li></a>
+            <img src="images/nav1.png">
+            <a href="mien.html"><li>站点风采</li></a>
+            <img src="images/nav1.png">
+            <a href="run.html"><li>开奖公告</li></a>
+            <img src="images/nav1.png">
+            <a href="my.html"><li>我的彩票</li></a>
+            <img src="images/nav1.png">
+            <a href="news.html"><li>福彩资讯</li></a>
+            <img src="images/nav1.png">
+            <a href="trend.html"><li>图表走势</li></a>
+            <img src="images/nav1.png">
+            <a href="past.html"><li>往期查询</li></a>
+        </ul>
+</div>
+
+<div class="bigBoxs box1">
+	<div class="left fleft shadow">
+		<div class="searchbox"><span>彩站列表</span>
+			<div class="search radius56">
+				<input placeholder="输入彩站名" class="gray40">
+				<img src="images/index3.png">
+			</div>
+		</div>
+		<div id="wrap1">
+			<ul class="bottom1" id="listbox1">
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+                <li>
+                    <div class="lin1 lin"><span class="left1 fleft">衡山投注站</span><span class="left2 fleft"><span class="yellow">★★★</span>★★</span><span class="right1 fright">累计销售<span class="red">2908万</span>张</span>
+                    </div>
+                    <div class="lin2 lin">彩站编号：44040801</div>
+                    <div class="lin3 lin">地址：龙湖区衡山路中福在线销售大厅</div>
+                    <div class='into'><a href='piazza.html'>进站购彩&gt;</a></div>
+                </li>
+            </ul>
+            <div class='jg-ceng'></div>
+			<div id="scrollbox1">
+				<div id="scrollbar1"></div>
+      		</div>
+		</div>
+			<script src="js/tinyScroll.js"></script>
+            <script>
+                new tinyScroll({
+                    wrapBox : document.getElementById('wrap1'),
+                    wrapList : document.getElementById('listbox1'),
+                    scrollBox :document.getElementById('scrollbox1'),
+                    scrollBar : document.getElementById('scrollbar1')
+                })
+            </script>
+	</div>
+    
+    
+    <div class="right fright">
+    	<script type="text/javascript">
+			$(function(){
+				$("#Imgshow").Imgshow({
+					intervalTime:4,
+				moveSpeedTime:400,
+				mouseEvent:"mouseonclick",
+				moveStyle:"left",
+				titleBar:{titleBar_height:36,titleBar_bgColor:"#fff",titleBar_alpha:0.8},
+				titleFont:{TitleFont_size:18,TitleFont_family:"微软雅黑",TitleFont_color:"#000",TitleFont_weight:"normal"},
+				btn:{btn_bgColor:"#333",btn_bgHoverColor:"#ef3c18",btn_fontColor:"#fff",btn_fontHoverColor:"#FFF",btn_bgAlpha:1,btn_borderWidth:0,}
+		});
+	})
+		</script>
+		<div id="Imgshow" class="shadow" style="visibility:hidden;">
+			<a href="#" target="_blank"><img src="images/fc01.png" alt="这是标题一" width="490" height="296"/></a>
+			<a href="#" target="_blank"><img src="images/fc02.png" alt="这是标题二" width="490" height="296"/></a>
+            <a href="#" target="_blank"><img src="images/fc03.png" alt="这是标题三" width="490" height="296"/></a>
+			<a href="#" target="_blank"><img src="images/fc04.png" alt="这是标题四" width="490" height="296"/></a>
+			<a href="#" target="_blank"><img src="images/fc05.png" alt="这是标题五" width="490" height="296"/></a>
+		</div>
+		<!---->
+        <div class="A1">
+        	<div class="title">
+            	<img src="images/fc_2.png">
+                <span>江城名站</span>
+            </div>
+            <div class="Bbox shadow">
+                <div class="ln1">
+                    <div class="fleft"><img src="images/fc_3.png"></div>
+                    <div class="fright">
+                        <div class="n1 red">汕头05687979889号彩站</div>
+                       <div  class="n2">彭建详：用诚心换爱心</div>
+                        <p class="n3">我见证了福利彩票的发展，我也从福利彩票发展中受益，福彩的发展和我的命运联系在一起。福彩的未来一定更加好。</p>
+                    </div>
+                </div>
+                <ul class="ln2">
+                    <li><img src="images/fc_4.png"></li>
+                    <li><img src="images/fc_5.png"></li>
+                    <li><img src="images/fc_6.png"></li>
+                    <li style="margin:0;"><img src="images/fc_7.png"></li>
+                </ul>
+        	</div>
+        </div>
+        <div class="A1 A2">
+        	<div class="title">
+            	<img src="images/fc_9.png">
+                <span>站长之星</span>
+            </div>
+            <div class="Bbox shadow">
+                <div class="ln1">
+                    <div class="fleft"><img src="images/fc_10.png"></div>
+                    <div class="fright">
+                        <div class="n1">汪昊</div>
+                       <div  class="n2">汕头福彩投注站销售员汪昊</div>
+                        <p class="n3">回想这10年的福彩销售人生路，感到有太多的艰辛和快乐，千言万语归结一句话：是福利彩票改变了我的生活和命运。</p>
+                    </div>
+                </div>
+                <ul class="ln2">
+                    <div>
+                        <li>三招开拓市场 销量一年上一个<a href="#">查看详情></a></li>
+                    </div>
+                    <div>
+                        <li>五次搬迁不气妥 重新启航再扬<a href="#">查看详情></a></li>
+                    </div>
+                    <div>
+                        <li>售彩夫妻风雨同舟<a href="#">查看详情></a></li>
+                    </div>
+                    <div>
+                        <li>我最牵挂的彩民<a href="#">查看详情></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Boxs">
+	<img class="img1" src="images/index5.png">
+    <div class="imgshow">
+    	<img src="images/index13.png">
+        <img src="images/index14.png">
+        <img src="images/index15.png">
+        <img style="margin:0;" src="images/index16.png">
+    </div>
+    <div class="Flink">
+    	<div class="title">
+         <img src="images/index17.png"><p class="Fsize16">友情链接</p>
+        </div>
+        <div class="linkboxs grayback80">
+            <a href="#"><img src="images/index18.png"></a>
+            <a href="#"><img src="images/index18_1.png"></a>
+            <a href="#"><img src="images/index19.png"></a>
+            <a href="#"><img src="images/index20.png"></a>
+            <a href="#"><img src="images/index21.png"></a>
+            <a href="#"><img src="images/index22.png"></a>
+            <a href="#"><img src="images/index23.png"></a>
+            <a href="#"><img src="images/index24.png"></a>
+            <a href="#"><img src="images/index25.png"></a>
+            <a href="#"><img src="images/index26.png"></a>
+        </div>
+    </div>
+</div>
+
+
+
+<!--尾部-->
+<div class="FootBoxs">
+	<div class="box2" id="box1">
+    	<ul class="a1">
+        	<div class="left">
+                <div class="title" style="text-align:center">手机购彩</div>
+                <img src="images/QR_code.png">
+            </div>
+            <div class="right">
+                <li>
+                中民福彩
+                </li>
+                <div class="lin10"></div>
+                 <li>
+                手机购彩&nbsp;充40得118<br>
+    （仅限新用户）
+                </li>
+            </div>
+        </ul>
+        <ul class="a2">
+            <div class="title">账户相关</div>
+            <li>
+                <a href="#">如何注册帐号</a>
+            </li>
+            <li>
+               <a href="#">怎么找回登录密码</a>
+            </li>
+            <li>
+               <a href="#">怎么找回支付密码</a>
+            </li>
+            <li>
+               <a href="#">如何修改手机号</a>
+            </li>
+            
+        </ul>
+        <ul class="a3">
+        	 <div class="title">充值购彩</div>
+            <li>
+                <a href="#">如何进行充值</a>
+            </li>
+            <li>
+               <a href="#">如何购买彩票</a>
+            </li>
+            <li>
+               <a href="#">如何查询购彩记录</a>
+            </li>
+            <li>
+               <a href="#">充值没到账怎么办</a>
+            </li>
+            
+        </ul>
+        <ul class="a4">
+        	 <div class="title">兑奖提款</div>
+            <li>
+                <a href="#">怎样进行兑奖</a>
+            </li>
+            <li>
+               <a href="#">如何进行提款</a>
+            </li>
+            <li>
+               <a href="#">提款多久到账</a>
+            </li>
+            <li>
+               <a href="#">领奖是否收手续费</a>
+            </li>
+            
+        </ul>
+        <ul class="a5">
+        	 <div class="title">购彩帮助</div>
+            <li>
+                <a href="#">双色球帮助</a>
+            </li>
+            <li>
+               <a href="#">3D帮助</a>
+            </li>
+            <li>
+               <a href="#">26选5帮助</a>
+            </li>
+            <li>
+               <a href="#">36选7帮助</a>
+            </li>
+            <li>
+            	<a href="#">好彩帮助</a>
+            </li>
+        </ul>
+    </div>
+    <ul id="box2">
+    	<a href="#">
+        <li>
+        	<img src="images/index27_1.png">
+            <p>购彩流程</p>
+        </li>
+        </a>
+        <a href="#">
+        <li>
+        	<img src="images/index27_2.png">
+            <p>O2O安全购彩</p>
+        </li>
+        </a>
+        <a href="#">
+    	<li>
+        	<img src="images/index27.png">
+            <p>账户安全</p>
+        </li>
+        <li>
+        	<img src="images/index28.png">
+            <p>购彩便捷</p>
+        </li>
+        </a>
+        <a href="#">
+        <li>
+        	<img src="images/index29.png">
+            <p>兑奖简单</p>
+        </li>
+        </a>
+        <a href="#">
+        <li style="margin:0px;">
+        	<img src="images/index30.png">
+            <p>提款快速</p>
+        </li>
+        </a>
+    </ul>
+</div>
+<div class="Footer">
+	<div class="box1">
+    <div class="top"><span><a href="#">关于我们</a></span>|<span><a href="#">联系方式</a></span>|<span><a href="#">投诉与建议</a></span>|<span><a href="#">网站地图</a></span></div>
+    <p>版权所有：广东中民福彩投资有限公司 ICP备案：粤ICP备7382754957号<br>
+地址：广东省汕头市龙湖区衡山路17号明珠广场中福在线3楼 客服热线：0754-88481851 邮政编码：515041<br>
+彩票广场 郑重提示：彩票有风险，投注需谨慎 不向未满18周岁的青少年出售彩票！</p>
+    </div>
+</div>
+
+</body>
+</html>

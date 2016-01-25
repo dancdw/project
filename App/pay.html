@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>支付</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+	// 页面跳转
+	function dumpUrl(obj) {
+		var url = $(obj).attr('data');
+		window.location.href=url;
+	}
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='#'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>我的账户</span></li>
+			<li class='nav-middle center fleft'>充 值</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='pay'>
+			<div class='input-group clearfix'>
+				<div class='title'>本次从支付宝充值<span class='orange font-26rem'>100元</span></div>
+				<input type='text' placeholder='支付宝账号' class='width-100'/>
+				<input type='password' placeholder='支付宝密码' class='width-100'/>
+			</div>
+			<div class='input-group'><button class='submit-btn-red fillet-5 center'>提 交</button></div>
+		</div>
+	</div>
+</body>
+</html>

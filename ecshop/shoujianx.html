@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>收件箱</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+
+$(function() {
+	$(".selall").click(function() {
+		$("input[type=checkbox]").attr("checked",'true');
+	});
+})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<span class="absolute title">收件箱</span>
+	</div>
+	
+	<div class="main">
+		<div class="shoujianx">
+			<table class="width-100 font-14rem center">
+				<tr class="bborder"><th></th><th>发件人</th><th>主题</th><th>日期</th><th></th></tr>
+				<tr class="bborder"><td><input type="checkbox"></td><td>蓝天木业</td><td>邀请您查看我的电子画册</td><td>2015/8/23</td><td onclick="dumpUrl(this);" url-data="youjianxq.html">查看</td></tr>
+				<tr class="bborder"><td><input type="checkbox"></td><td>蓝天木业</td><td>邀请您查看我的电子画册</td><td>2015/8/23</td><td onclick="dumpUrl(this);" url-data="youjianxq.html">查看</td></tr>
+				<tr class="bborder"><td><input type="checkbox"></td><td>蓝天木业</td><td>邀请您查看我的电子画册</td><td>2015/8/23</td><td onclick="dumpUrl(this);" url-data="youjianxq.html">查看</td></tr>
+				<tr><td colspan="5" class="left"><span class="selall">全选</span><span>删除</span></td></tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

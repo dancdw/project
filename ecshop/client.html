@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>客户</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$(".ul-tag li").click(function() { // 第一个选项卡
+			$(".ul-tag li").removeClass("sel");
+			$(this).addClass("sel");
+			$("dd").addClass("hidden");
+			$("dd").eq($(this).index()).removeClass("hidden");
+		});
+		$(".item-group li").click(function() { // 第二个选项卡
+			$(this).parent().find("li").removeClass("sel");
+			$(this).addClass("sel");
+			$("dd:visible .item-child").addClass("hidden");
+			$("dd:visible .item-child").eq($(this).index()).removeClass("hidden");
+		});
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<div class="uf aborder search fillet-5" style="width:90%">
+			<input type="text" class="fleft uf-1 border-0"/><span class="fleft icon-search"></span>
+		</div>
+	</div>
+	
+	<div class='main'>
+		<div class="client">
+			<ul class="ul-tag font-14rem clearfix">
+				<li class="fleft center bg-gray sel">潜在客户</li><li class="fleft center bg-gray">家具店</li><li class="fleft center bg-gray">批发商</li><li class="fleft center bg-gray">推荐客户</li>
+			</ul>
+			<dl>
+				<dd>
+					<ul class="uf width-100 font-14rem clearfix center item-group">
+						<li class="uf-1 fleft bg-gray sel">最新客户</li><li class="uf-1 fleft bg-gray">五星</li><li class="uf-1 fleft bg-gray">四星</li><li class="uf-1 fleft bg-gray">三星</li><li class="uf-1 fleft bg-gray">二星</li><li class="uf-1 fleft bg-gray">一星</li>
+					</ul>
+					<table class="width-100 font-14rem">
+						<tr class="item-child">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</dd>
+				<dd class="hidden">
+					<ul class="uf width-100 font-14rem clearfix center item-group">
+						<li class="uf-1 fleft bg-gray sel">现有客户</li><li class="uf-1 fleft bg-gray">五星</li><li class="uf-1 fleft bg-gray">四星</li><li class="uf-1 fleft bg-gray">三星</li><li class="uf-1 fleft bg-gray">二星</li><li class="uf-1 fleft bg-gray">一星</li>
+					</ul>
+					<table class="width-100 font-14rem">
+						<tr class="item-child">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</dd>
+				<dd class="hidden">
+					<ul class="uf width-100 font-14rem clearfix center item-group">
+						<li class="uf-1 fleft bg-gray sel">现有客户</li><li class="uf-1 fleft bg-gray">五星</li><li class="uf-1 fleft bg-gray">四星</li><li class="uf-1 fleft bg-gray">三星</li><li class="uf-1 fleft bg-gray">二星</li><li class="uf-1 fleft bg-gray">一星</li>
+					</ul>
+					<table class="width-100 font-14rem">
+						<tr class="item-child">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="item-child hidden">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</dd>
+				<dd class="hidden">
+					<table class="width-100 font-14rem">
+						<tr class="item-child">
+							<td colspan="4">
+								<table class="font-14rem width-100 center" >
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>张龙</td><td>吉安市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/2.jpg" class="fillet-25"/>赵虎</td><td>成都市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/3.jpg" class="fillet-25"/>王超</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/4.jpg" class="fillet-25"/>张三</td><td>深圳龙岗</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/5.jpg" class="fillet-25"/>李四</td><td>广州市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr class="bborder"><td><img src="images/1.jpg" class="fillet-25"/>王五</td><td>北京市</td><td>13800138000</td><td><span class="aborder send">发送消息</span></td></tr>
+									<tr><td colspan="4" class="right"><span class="change">换一批</span></td></tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>

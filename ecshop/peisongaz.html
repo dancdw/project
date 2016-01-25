@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>配送安装</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		load_more(); // 加载更多
+		$("li").click(function() {
+			$("li").addClass("bborder");
+			$(this).removeClass("bborder");
+			$("table").addClass("hidden");
+			$("table").eq($(this).index()).removeClass("hidden");
+		});
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<div class="uf aborder search fillet-5" style="width:90%">
+			<input type="text" class="fleft uf-1 border-0"/><span class="fleft icon-search"></span>
+		</div>
+	</div>
+	
+	<div class='main'>
+		<div class="peisongaz">
+			<ul class="ul-tag tborder font-12rem center uf width-100">
+				<li class="fleft rborder uf-1">拉货送货</li><li class="fleft rborder bborder uf-1">维修安装</li><li class="fleft rborder bborder uf-1">搬运工</li><li class="fleft bborder uf-1">快递物流</li>
+			</ul>
+			<table class="width-100 font-12rem">
+				<tr class="bborder">
+					<td class="center"><img src="images/1.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+				<tr class="bborder">
+					<td class="center"><img src="images/2.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+				<tr class="bborder">
+					<td class="center"><img src="images/3.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+				<tr class="bborder">
+					<td class="center"><img src="images/4.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+			</table>
+			<table class="width-100 font-12rem hidden">
+				<tr class="bborder">
+					<td class="center"><img src="images/2.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+				<tr class="bborder">
+					<td class="center"><img src="images/4.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+			</table>
+			<table class="width-100 font-12rem hidden">
+				<tr class="bborder">
+					<td class="center"><img src="images/3.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+				<tr class="bborder">
+					<td class="center"><img src="images/1.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+			</table>
+			<table class="width-100 font-12rem hidden">
+				<tr class="bborder">
+					<td class="center"><img src="images/1.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+				<tr class="bborder">
+					<td class="center"><img src="images/4.jpg"/></td><td class="center">江西南康</td><td>联系电话：82112345<br/>联系人：张生</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

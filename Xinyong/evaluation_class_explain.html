@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>信用评价-指标类配置说明</title>
+<link type="text/css" rel="stylesheet" href="component/auto-play-image/css/datouwang.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/selectivizr-min.js"></script>
+<script type="text/javascript" src="component/auto-play-image/js/koala.min.1.5.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<!-- 顶部导航 start -->
+<div class="header">
+	<div class="common_width clearfix">
+		<div class="logo_div">
+			<div class="logo_div_img"><img alt="" src="images/logo.png"></div><div class="logo_div_title"><div class="ldtt1">湖北运输市场</div><div class="ldtt2">信用系统</div></div>
+		</div>
+		<div class="nav_div">
+			<div class="nav_select_border"></div>
+			<div class="nav_select a1">
+				<div class="nav_hover"><div class="nav_sign">信用征集</div></div>
+				<div class="a1_content content">
+					<div class="nc_content">
+						<div class="ncc_title">征集指标配置</div>
+						<div class="ncc_content">
+							<div><a href="index_class_explain.html">指标类配置</a></div>
+							<div><a href="index_item_explain.html">指标项配置</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">在线补录</div>
+						<div class="ncc_content">
+							<div><a href="online_fillform_add.html">在线填报</a></div>
+							<div><a href="online_fillform_sel.html">填报查询</a></div>
+							<div><a href="archives_list.html">档案查询</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav_select a2">
+				<div class="nav_hover"><div class="nav_sign">信用评价</div></div>
+				<div class="a2_content content">
+					<div class="nc_content">
+						<div class="ncc_title">评价指标配置</div>
+						<div class="ncc_content">
+							<div><a href="evaluation_class_explain.html">指标类配置</a></div>
+							<div><a href="evaluation_item_explain.html">指标项配置</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">信用考核</div>
+						<div class="ncc_content">
+							<div><a href="evaluation_reputation_assessment.html">信誉考核</a></div>
+							<div><a href="evaluation_assessment_apply.html">申请审核</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav_select a3">
+				<div class="nav_hover"><div class="nav_sign">信用发布</div></div>
+				<div class="a3_content content">
+					<div class="nc_content">
+						<div class="ncc_title">发布指标配置</div>
+						<div class="ncc_content">
+							<div><a href="release_class_explain.html">指标配置</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">发布流程配置</div>
+						<div class="ncc_content">
+							<div><a href="publish_process.html">发布流程</a></div>
+							<div><a href="credit_publish.html">权限配置</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav_select a4">
+				<div class="nav_hover"><div class="nav_sign">监测统计</div></div>
+				<div class="a4_content content">
+					<div class="nc_content">
+						<div class="ncc_title">检测系统</div>
+						<div class="ncc_content">
+							<div><a href="monitor_warning_sel.html">预警查询</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">统计分析</div>
+						<div class="ncc_content">
+							<div><a href="#">评价等级分布</a></div>
+							<div><a href="#">AAA企业分布</a></div>
+							<div><a href="#">评价等级变化 </a></div>
+							<div><a href="#">违章案件分布 </a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav_select a5">
+				<div class="nav_hover"><div class="nav_sign">IC卡管理</div></div>
+				<div class="a5_content content">
+					<div class="nc_content">
+						<div class="ncc_title">IC卡管理</div>
+						<div class="ncc_content">
+							<div><a href="#">检测预警</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">IC卡管理</div>
+						<div class="ncc_content">
+							<div><a href="#">评价等级分布</a></div>
+							<div><a href="#">AAA企业分布</a></div>
+							<div><a href="#">评价等级变化 </a></div>
+							<div><a href="#">违章案件分布 </a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search_button"><input placeholder="搜索" /><div class="search"></div></div>
+		</div>
+		<div class="user_info">
+			<div class="ui1">用户 : admin &nbsp; 机构 : 湖北省交通运输厅</div>
+			<div class="ui2"><a href="#">退出</a>  登录时间 : 2015-08-01 09:30:30</div>
+		</div>
+	</div>
+</div>
+<!-- 顶部导航 end -->
+<div class="clearfix"></div>
+<!-- 主体 start -->
+<div id="main" class="common_width clearfix">
+	<dl id="nav-left">
+		<dt><a href="credit_evaluation.html">信用评价</a></dt>
+		<dt onclick="leftNavSel(this)" class="bborder font-16px"><i class="action"></i>指标类配置</dt>
+		<dd>
+			<div class="item red"><a href="evaluation_class_explain.html">指标类配置说明</a></div>
+			<div class="item tborder"><a href="evaluation_class_add.html">新增指标类</a></div>
+			<div class="item tborder"><a href="evaluation_class_edit.html">编辑指标类</a></div>
+			<div class="item tborder bborder"><a href="evaluation_class_sel.html">查询指标类</a></div>
+		</dd>
+		<dt onclick="leftNavSel(this)" class="bborder font-16px"><i class="action"></i>指标项配置</dt>
+		<dd>
+			<div class="item"><a href="evaluation_item_explain.html">指标项配置说明</a></div>
+			<div class="item tborder"><a href="evaluation_item_add.html">新增指标项</a></div>
+			<div class="item tborder"><a href="evaluation_item_edit.html">编辑指标项</a></div>
+			<div class="item tborder bborder"><a href="evaluation_item_sel.html">查询指标项</a></div>
+		</dd>
+		<dt onclick="leftNavSel(this)" class="bborder font-16px"><i class="action"></i>考核</dt>
+		<dd>
+			<div class="item"><a href="evaluation_reputation_assessment.html">企业质量信誉考核</a></div>
+			<div class="item tborder"><a href="evaluation_assessment_sel.html">查询考核申请</a></div>
+			<div class="item tborder"><a href="evaluation_assessment_see.html">查看申请</a></div>
+			<div class="item tborder"><a href="evaluation_assessment_apply.html">申请审核</a></div>
+		</dd>
+	</dl>
+	<div id="body">
+		<div id="position"><span class="fleft">当前位置：<a href="#">信用评价</a> > <a href="#">指标类配置</a> > <a href="#">信用信息指标类配置介绍</a></span><span class="fright red add">添加为快捷菜单</span></div>
+		<p class="introduce"><span class="fweight font-24px">道路运输市场</span>用信息征集功能，主要面向省、市、县各级道路运输市场行业管理人员等，便于其按照道路运输市场信用信息指标要求，完成对相关信用信息的采集、入库等工作。系统主要功能包括：信用信息指标配置管理、信用信息批量处理入库、信用信息在线补录、信用数据质量检查分析等。</p>
+		<div class="index_class_explain">
+			<div class="tag tag_0"><a href="javascript:void(0);" class="first">新增信用征集指标类</a><a href="javascript:void(0);" class="second">编辑信用征集指标类</a><a href="javascript:void(0);" class="three">删除信用征集指标类</a><a href="javascript:void(0);" class="fourth">查看信用征集指标类</a></div>
+			<dl>
+				<dd class="content_container lborder rborder bborder">
+					<!-- 轮播图片 -->
+					<div id="fsD1" class="focus">
+						<div id="D1pic1" class="fPic">
+							<div class="fcon" style="display: none;"><a href=""><img src="images/bg_1.png"style="opacity: 1;" /></a></div>
+							<div class="fcon" style="display: none;"><a href=""><img src="images/index_class_explain_img_1.png" style="opacity: 1;" /></a></div>
+							<div class="fcon" style="display: none;"><a href=""><img src="images/index_class_explain_img_1.png"style="opacity: 1;" /></a></div>
+						</div>
+						<div class="fbg">
+							<div class="D1fBt" id="D1fBt1">
+								<a href="javascript:void(0)" target="_self" class="current"></a>
+								<a href="javascript:void(0)" target="_self" class=""></a>
+								<a href="javascript:void(0)" target="_self" class=""></a>
+							</div>
+						</div>
+						<span class="prev"></span> <span class="next"></span>
+					</div>
+					<!-- 轮播图片 -->
+				</dd>
+				<dd class="content_container lborder rborder bborder hidden">
+					<!-- 轮播图片 -->
+					<div id="fsD2" class="focus">
+						<div id="D1pic2" class="fPic">
+							<div class="fcon" style="display: none;"><a href=""><img src="images/bg_1.png"style="opacity: 1;" /></a></div>
+							<div class="fcon" style="display: none;"><a href=""><img src="images/index_class_explain_img_1.png" style="opacity: 1;" /></a></div>
+							<div class="fcon" style="display: none;"><a href=""><img src="images/index_class_explain_img_1.png"style="opacity: 1;" /></a></div>
+						</div>
+						<div class="fbg">
+							<div class="D1fBt" id="D1fBt2">
+								<a href="javascript:void(0)" target="_self" class="current"></a>
+								<a href="javascript:void(0)" target="_self" class=""></a>
+								<a href="javascript:void(0)" target="_self" class=""></a>
+							</div>
+						</div>
+						<span class="prev"></span> <span class="next"></span>
+					</div>
+					<!-- 轮播图片 -->
+				</dd>
+				<dd class="content_container lborder rborder bborder hidden">
+					<!-- 轮播图片 -->
+					<div id="fsD3" class="focus">
+						<div id="D1pic3" class="fPic">
+							<div class="fcon" style="display: none;"><a href=""><img src="images/bg_1.png"style="opacity: 1;" /></a></div>
+							<div class="fcon" style="display: none;"><a href=""><img src="images/index_class_explain_img_1.png" style="opacity: 1;" /></a></div>
+							<div class="fcon" style="display: none;"><a href=""><img src="images/index_class_explain_img_1.png"style="opacity: 1;" /></a></div>
+						</div>
+						<div class="fbg">
+							<div class="D1fBt" id="D1fBt3">
+								<a href="javascript:void(0)" target="_self" class="current"></a>
+								<a href="javascript:void(0)" target="_self" class=""></a>
+								<a href="javascript:void(0)" target="_self" class=""></a>
+							</div>
+						</div>
+						<span class="prev"></span> <span class="next"></span>
+					</div>
+					<!-- 轮播图片 -->
+				</dd>
+				<dd class="content_container lborder rborder bborder hidden">
+					<!-- 轮播图片 -->
+					<div id="fsD4" class="focus">
+						<div id="D1pic4" class="fPic">
+							<div class="fcon" style="display: none;"><a href=""><img src="images/bg_1.png"style="opacity: 1;" /></a></div>
+							<div class="fcon" style="display: none;"><a href=""><img src="images/index_class_explain_img_1.png" style="opacity: 1;" /></a></div>
+							<div class="fcon" style="display: none;"><a href=""><img src="images/index_class_explain_img_1.png"style="opacity: 1;" /></a></div>
+						</div>
+						<div class="fbg">
+							<div class="D1fBt" id="D1fBt4">
+								<a href="javascript:void(0)" target="_self" class="current"></a>
+								<a href="javascript:void(0)" target="_self" class=""></a>
+								<a href="javascript:void(0)" target="_self" class=""></a>
+							</div>
+						</div>
+						<span class="prev"></span> <span class="next"></span>
+					</div>
+					<!-- 轮播图片 -->
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<!-- 主体 end -->
+
+<!-- 底部导航 start -->
+<div class="footer">
+	<div class="footer_link bborder">
+		<div><a href="">系统管理</a></div>
+		<div><a href="">版权声明</a></div>
+		<div><a href="">隐私保护</a></div>
+		<div><a href="">法律责任</a></div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="trademark">&copy; 2015 湖北公路水路运输市场信用信息服务系统。 保留所有权利。<img alt="" src="images/logo.png"/></div>
+</div>
+<!-- 底部导航 end -->
+</body>
+<script type="text/javascript">
+	//轮播动画的代码
+	Qfast.add('widgets', {
+		path : "component/auto-play-image/js/terminator2.2.min.js",
+		type : "js",
+		requires : [ 'fx' ]
+	});
+	Qfast(false, 'widgets', function() {
+		K.tabs({
+			id : 'fsD1', //焦点图包裹id  
+			conId : "D1pic1", //** 大图域包裹id  
+			tabId : "D1fBt1",
+			tabTn : "a",
+			conCn : '.fcon', //** 大图域配置class       
+			auto : 1, //自动播放 1或0
+			effect : 'fade', //效果配置
+			eType : 'click', //** 鼠标事件
+			pageBt : true,//是否有按钮切换页码
+			bns : [ '.prev', '.next' ],//** 前后按钮配置class                          
+			interval : 3000
+		//** 停顿时间  
+		})
+	});
+	Qfast(false, 'widgets', function() {
+		K.tabs({
+			id : 'fsD2', //焦点图包裹id  
+			conId : "D1pic2", //** 大图域包裹id  
+			tabId : "D1fBt2",
+			tabTn : "a",
+			conCn : '.fcon', //** 大图域配置class       
+			auto : 1, //自动播放 1或0
+			effect : 'fade', //效果配置
+			eType : 'click', //** 鼠标事件
+			pageBt : true,//是否有按钮切换页码
+			bns : [ '.prev', '.next' ],//** 前后按钮配置class                          
+			interval : 3000
+		//** 停顿时间  
+		})
+	});
+	Qfast(false, 'widgets', function() {
+		K.tabs({
+			id : 'fsD3', //焦点图包裹id  
+			conId : "D1pic3", //** 大图域包裹id  
+			tabId : "D1fBt3",
+			tabTn : "a",
+			conCn : '.fcon', //** 大图域配置class       
+			auto : 1, //自动播放 1或0
+			effect : 'fade', //效果配置
+			eType : 'click', //** 鼠标事件
+			pageBt : true,//是否有按钮切换页码
+			bns : [ '.prev', '.next' ],//** 前后按钮配置class                          
+			interval : 3000
+		//** 停顿时间  
+		})
+	});
+	Qfast(false, 'widgets', function() {
+		K.tabs({
+			id : 'fsD4', //焦点图包裹id  
+			conId : "D1pic4", //** 大图域包裹id  
+			tabId : "D1fBt4",
+			tabTn : "a",
+			conCn : '.fcon', //** 大图域配置class       
+			auto : 1, //自动播放 1或0
+			effect : 'fade', //效果配置
+			eType : 'click', //** 鼠标事件
+			pageBt : true,//是否有按钮切换页码
+			bns : [ '.prev', '.next' ],//** 前后按钮配置class                          
+			interval : 3000
+		//** 停顿时间  
+		})
+	});
+</script>
+</html>

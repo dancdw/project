@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>信用评价-申请审核</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/chosen.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/selectivizr-min.js"></script>
+<script src="js/jquery.bigautocomplete.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function() {
+	// 时间控件
+	$(".datePicker").datepicker({
+		numberOfMonths: 2,
+		dateFormat: 'yy-mm-dd',
+		monthNames: [' 1 月', ' 2 月', ' 3 月', ' 4 月', ' 5 月', ' 6 月', ' 7 月', ' 8 月', ' 9 月', ' 10 月', ' 11 月', ' 12 月'],
+		dayNames: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+		dayNamesMin: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+		firstDay: 1
+    });
+	// td中的选中效果
+	$("td .table_sel").click(function() {
+		$(this).toggleClass("table_sel_true");
+	});
+	// th中的选中效果
+	$("th .table_sel").click(function() {
+		if( $(this).hasClass("table_sel_true") ) {
+			$(this).removeClass("table_sel_true");
+			$("td .table_sel").removeClass("table_sel_true");
+		} else {
+			$(this).addClass("table_sel_true");
+			$("td .table_sel").addClass("table_sel_true");
+		}
+	});
+});
+</script>
+</head>
+<body>
+<!-- 顶部导航 start -->
+<div class="header">
+	<div class="common_width clearfix">
+		<div class="logo_div">
+			<div class="logo_div_img"><img alt="" src="images/logo.png"></div><div class="logo_div_title"><div class="ldtt1">湖北运输市场</div><div class="ldtt2">信用系统</div></div>
+		</div>
+		<div class="nav_div">
+			<div class="nav_select_border"></div>
+			<div class="nav_select a1">
+				<div class="nav_hover"><div class="nav_sign">信用征集</div></div>
+				<div class="a1_content content">
+					<div class="nc_content">
+						<div class="ncc_title">征集指标配置</div>
+						<div class="ncc_content">
+							<div><a href="index_class_explain.html">指标类配置</a></div>
+							<div><a href="index_item_explain.html">指标项配置</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">在线补录</div>
+						<div class="ncc_content">
+							<div><a href="online_fillform_add.html">在线填报</a></div>
+							<div><a href="online_fillform_sel.html">填报查询</a></div>
+							<div><a href="archives_list.html">档案查询</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav_select a2">
+				<div class="nav_hover"><div class="nav_sign">信用评价</div></div>
+				<div class="a2_content content">
+					<div class="nc_content">
+						<div class="ncc_title">评价指标配置</div>
+						<div class="ncc_content">
+							<div><a href="evaluation_class_explain.html">指标类配置</a></div>
+							<div><a href="evaluation_item_explain.html">指标项配置</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">信用考核</div>
+						<div class="ncc_content">
+							<div><a href="evaluation_reputation_assessment.html">信誉考核</a></div>
+							<div><a href="evaluation_assessment_apply.html">申请审核</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav_select a3">
+				<div class="nav_hover"><div class="nav_sign">信用发布</div></div>
+				<div class="a3_content content">
+					<div class="nc_content">
+						<div class="ncc_title">发布指标配置</div>
+						<div class="ncc_content">
+							<div><a href="release_class_explain.html">指标配置</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">发布流程配置</div>
+						<div class="ncc_content">
+							<div><a href="publish_process.html">发布流程</a></div>
+							<div><a href="credit_publish.html">权限配置</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav_select a4">
+				<div class="nav_hover"><div class="nav_sign">监测统计</div></div>
+				<div class="a4_content content">
+					<div class="nc_content">
+						<div class="ncc_title">检测系统</div>
+						<div class="ncc_content">
+							<div><a href="monitor_warning_sel.html">预警查询</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">统计分析</div>
+						<div class="ncc_content">
+							<div><a href="#">评价等级分布</a></div>
+							<div><a href="#">AAA企业分布</a></div>
+							<div><a href="#">评价等级变化 </a></div>
+							<div><a href="#">违章案件分布 </a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav_select a5">
+				<div class="nav_hover"><div class="nav_sign">IC卡管理</div></div>
+				<div class="a5_content content">
+					<div class="nc_content">
+						<div class="ncc_title">IC卡管理</div>
+						<div class="ncc_content">
+							<div><a href="#">检测预警</a></div>
+						</div>
+					</div>
+					<div class="nc_content no_nc_content">
+						<div class="ncc_title">IC卡管理</div>
+						<div class="ncc_content">
+							<div><a href="#">评价等级分布</a></div>
+							<div><a href="#">AAA企业分布</a></div>
+							<div><a href="#">评价等级变化 </a></div>
+							<div><a href="#">违章案件分布 </a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search_button"><input placeholder="搜索" /><div class="search"></div></div>
+		</div>
+		<div class="user_info">
+			<div class="ui1">用户 : admin &nbsp; 机构 : 湖北省交通运输厅</div>
+			<div class="ui2"><a href="#">退出</a>  登录时间 : 2015-08-01 09:30:30</div>
+		</div>
+	</div>
+</div>
+<!-- 顶部导航 end -->
+<div class="clearfix"></div>
+<!-- 主体 start -->
+<div id="main" class="common_width clearfix">
+	<dl id="nav-left">
+		<dt><a href="credit_evaluation.html">信用评价</a></dt>
+		<dt onclick="leftNavSel(this)" class="bborder font-16px"><i class="action"></i>指标类配置</dt>
+		<dd>
+			<div class="item"><a href="evaluation_class_explain.html">指标类配置说明</a></div>
+			<div class="item tborder"><a href="evaluation_class_add.html">新增指标类</a></div>
+			<div class="item tborder"><a href="evaluation_class_edit.html">编辑指标类</a></div>
+			<div class="item tborder bborder"><a href="evaluation_class_sel.html">查询指标类</a></div>
+		</dd>
+		<dt onclick="leftNavSel(this)" class="bborder font-16px"><i class="action"></i>指标项配置</dt>
+		<dd>
+			<div class="item"><a href="evaluation_item_explain.html">指标项配置说明</a></div>
+			<div class="item tborder"><a href="evaluation_item_add.html">新增指标项</a></div>
+			<div class="item tborder"><a href="evaluation_item_edit.html">编辑指标项</a></div>
+			<div class="item tborder bborder"><a href="evaluation_item_sel.html">查询指标项</a></div>
+		</dd>
+		<dt onclick="leftNavSel(this)" class="bborder font-16px"><i class="action"></i>考核</dt>
+		<dd>
+			<div class="item"><a href="evaluation_reputation_assessment.html">企业质量信誉考核</a></div>
+			<div class="item tborder"><a href="evaluation_assessment_sel.html">查询考核申请</a></div>
+			<div class="item tborder"><a href="evaluation_assessment_see.html">查看申请</a></div>
+			<div class="item tborder red"><a href="evaluation_assessment_apply.html">申请审核</a></div>
+		</dd>
+	</dl>
+	<div id="body">
+		<div id="position"><span class="fleft">当前位置：<a href="#">信用评价</a> > <a href="#">考核</a> > <a href="#">申请审核</a></span><span class="fright red add">添加为快捷菜单</span></div>
+		<div class="index_class">
+			<div class="space_hx"></div>
+			<div class="input-group fleft"><select class="c_select"><option>申请类别</option><option>父级指标类1</option><option>父级指标类2</option><option>父级指标类3</option><option>父级指标类4</option><option>父级指标类5</option></select></div>
+			<div class="input-group fleft lmargin-70"><div class="uf width-100"><label class="rborder"><img src="images/icon_time.png"/></label><input type="text" class="uf-1 border-0 datePicker" placeholder="填报时间（起始）"/></div></div>
+			<div class="input-group fright"><div class="uf width-100"><label class="rborder"><img src="images/icon_time.png"/></label><input type="text" class="uf-1 border-0 datePicker" placeholder="填报时间（结束）"/></div></div>
+			<div class="space_hx"></div>
+			<div class="input-group fleft"><div class="uf width-100"><input type="text" class="uf-1 border-0" name='role' placeholder="填报单位/个人名称"/></div></div>
+			<div class="query-group fleft lmargin-70"><button class="bg-blue border-0 long_btn margin-0"><i class="icon_sel left-0"></i><span>查询待我审核信息</span></button></div>
+			<div class="space_hx"></div>
+			<div class="table-title"><span class="font-18px fweight">查看结果</span></div>
+			<table class="width-100 index_table">
+				<tr><th style="max-width:12px;"><span class="table_sel"></span></th><th>序号</th><th>填报指标类</th><th>填报单位/个人</th><th>填报时间</th><th>查看填报信息</th></tr>
+				<tr><td style="max-width:12px;"><span class="table_sel"></span></td><td>1</td><td>描述备注</td><td>修改人</td><td></td><td><a href="javascript:;" class="detail">查看详情</a></td></tr>
+				<tr><td><span class="table_sel"></span></td><td>2</td><td>描述备注</td><td>修改人</td><td></td><td><a href="javascript:;" class="detail">查看详情</a></td></tr>
+				<tr><td><span class="table_sel"></span></td><td>3</td><td>描述备注</td><td>修改人</td><td></td><td><a href="javascript:;" class="detail">查看详情</a></td></tr>
+				<tr><td><span class="table_sel"></span></td><td>4</td><td>描述备注</td><td>修改人</td><td></td><td><a href="javascript:;" class="detail">查看详情</a></td></tr>
+				<tr><td colspan="6" class="page"><div class="fright"><span class="prev"></span><a href="javascript:;" class="border-0">1</a><a href="javascript:;">2</a><a href="javascript:;">3</a><a href="javascript:;">4</a><a href="javascript:;">5</a><a href="javascript:;">6</a><a href="javascript:;">7</a><span class="next"></span></div></td></tr>
+			</table>
+			<div class="center"><button class="bg-blue border-0 long_btn"><i class="icon_fallback"></i><span>批量审核驳回</span></button><button class="bg-blue border-0 long_btn"><i class="icon_submit"></i><span>批量审核通过</span></button></div>
+		</div>
+	</div>
+</div>
+<!-- 主体 end -->
+
+<!-- 底部导航 start -->
+<div class="footer">
+	<div class="footer_link bborder">
+		<div><a href="">系统管理</a></div>
+		<div><a href="">版权声明</a></div>
+		<div><a href="">隐私保护</a></div>
+		<div><a href="">法律责任</a></div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="trademark">&copy; 2015 湖北公路水路运输市场信用信息服务系统。 保留所有权利。<img alt="" src="images/logo.png"/></div>
+</div>
+<!-- 底部导航 end -->
+</body>
+</html>

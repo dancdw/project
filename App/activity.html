@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>活动</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+//页面跳转
+function dumpUrl(obj) {
+	var url = $(obj).attr('data');
+	window.location.href=url;
+}
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='mylottery.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>我的彩票</span></li>
+			<li class='nav-middle center fleft'>活动</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='activity'>
+			<img src="images/message/activity_bg.png"/>
+			<div class="width-100 bborder clearfix bg-white" onclick='dumpUrl(this);' data='activity_detail.html'>
+				<div class='fleft font-12rem content lmargin-2'>注册网上O2O购买彩票，开奖我提醒，送彩票活动<br/><span class='gray font-10rem'>活动时间：2015/05/24~2015/06/24</span></div><div class='fright icon-go'><img src="images/myaccout/go.png"/></div>
+			</div>
+			<div class="width-100 bborder clearfix bg-white" onclick='dumpUrl(this);' data='activity_detail.html'>
+				<div class='fleft font-12rem content lmargin-2'>注册网上O2O购买彩票，开奖我提醒，送彩票活动<br/><span class='gray font-10rem'>活动时间：2015/05/24~2015/06/24</span></div><div class='fright icon-go'><img src="images/myaccout/go.png"/></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

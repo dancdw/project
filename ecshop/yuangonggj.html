@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>员工轨迹</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$("li").click(function() { // 切换选项卡
+			$("li").addClass("bborder");
+			$(this).removeClass("bborder");
+			$("table").addClass("hidden");
+			$("table").eq($(this).index()).removeClass("hidden");
+		});
+		$(".star").click(function() { // 选择星级
+			var now = $(this).index();
+			var len = $(".star").length;
+			if( now == 1) {
+				if( $(this).hasClass("star-solid") ) {
+					if( $(".star-solid").length > 1 ) {
+						$(".star-solid").removeClass("star-solid");
+						$(this).addClass("star-solid");
+					} else {
+						$(this).removeClass("star-solid");
+					}
+				} else {
+					$(this).addClass("star-solid");
+				}
+			} else {
+				for( var i = 0; i <=  len; i++ ) {
+					if( i < now) {
+						$(".star").eq(i).addClass("star-solid");
+					} else {
+						$(".star").eq(i).removeClass("star-solid");
+					}
+				}
+			}
+		});
+		$(".on").click(function() { // 开关
+			if($(this).hasClass("up")) { 
+				$(this).removeClass("up");
+			} else {
+				$(this).addClass("up");
+			}
+		});
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back"></div>
+	</div>
+	
+	<div class="main clearfix">
+		<div class="yuangonggj">
+			<ul class="tborder center clearfix uf width-100">
+				<li class="fleft rborder uf-1">轨迹</li><li class="fleft bborder rborder uf-1">添加客户资料</li><li class="fleft bborder uf-1" onclick="dumpUrl(this);" url-data="gongzuoadd.html">计划</li>
+			</ul>
+			<table class="font-14rem guiji">
+				<tr><td><label class="fleft qiandao">签到：</label><span class="on fleft"></span></td></tr>
+				<tr><td><label class="fleft qiandao">我的轨迹：</label><span class="fleft chakan aborder">查看</span></td></tr>
+			</table>
+			<table class="hidden width-100 font-14rem">
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">名称：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">负责人：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">手机：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">座机：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100"><label class="fleft padding-0">区域地址：</label><select><option>广东省</option><option>江西省</option></select><select><option>广州市</option><option>深圳市</option></select><select><option>罗湖区</option><option>宝安区</option></select></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">详细地址：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100"><label class="fleft padding-0">定位：</label><span class="aborder icon">获取坐标</span><span>X 233 </span><span> Y 156</span></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100"><label class="fleft padding-0">图片：</label><span class="aborder icon">拍照上传</span><span class="aborder icon">本地上传</span></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">描述：</label><textarea class="uf-1 font-14rem" rows="3"></textarea></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100"><label class="fleft">星级：</label><span class=" fleft star"></span><span class=" fleft star"></span><span class=" fleft star"></span><span class="fleft star"></span><span class=" fleft star"></span></div></td><td class="width-5"></td></tr>
+				<tr class="tborder"><td class="width-5"></td><td class="center"><span class="sumbit block white">提交资料</span></td><td class="width-5"></td></tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

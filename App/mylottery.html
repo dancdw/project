@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>我的彩票</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function() {
+	// 切换tag
+	$(".tag li").click(function() {
+		$(".tag li").removeClass('this');
+		$(this).addClass('this');
+		$('dd').removeClass('show');
+		$('dd').eq($(this).index()).addClass('show');
+	});
+	load_more();
+})
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft vihidden' onclick='dumpUrl(this);' data='mylottery.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>我的彩票</span></li>
+			<li class='nav-middle center fleft'>我的彩票</li>
+			<li class='nav-right center fright'><img src='images/mylottery/set.png' class='fright' onclick='dumpUrl(this);' data='myaccount.html'/></li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='mylottery mybet'>
+			<div class='title fleft relative'>
+				<img src='images/mylottery/bg.png' class='bg'/>
+				<div class='account absolute fleft white'>
+					<img src='images/mylottery/lottery.png' class='img'/><span class='str'>余额</span><img src='images/mylottery/go.png' class='go'/><br/><span>96.00元</span>
+				</div>
+				<div class='freeze absolute fleft white'>
+					<img src='images/mylottery/freeze.png' class='img'/><span class='str'>冻结</span><img src='images/mylottery/go.png' class='go'/><br/><span>24.00元</span>
+				</div>
+				<ul class='fleft absolute width-100 opacity-9 white'>
+					<li class='fleft right'><span class='fleft rborder item' onclick='dumpUrl(this);' data='recharge_money.html'><span class='fright left'>充值</span><img src='images/mylottery/full.png' class='fright'/></span></li>
+					<li class='fleft right'><span class='fleft rborder item' onclick='dumpUrl(this);' data='carrycash_one.html'><span class='fright left'>提现</span><img src='images/mylottery/carrycash.png' class='fright'/></span></li>
+					<li class='fleft right'><span class='fleft item' onclick='dumpUrl(this);' data='mybet.html'><span class='fright left'>中奖</span><img src='images/mylottery/trophy.png' class='fright'/></span></li>
+				</ul>
+			</div>
+			<div class='tag width-100 fleft font-12rem bborder'>
+				<ul class='clearfix'>
+					<li class='width-20 fleft center bg-white this'>全部订单</li>
+					<li class='width-20 fleft center bg-white'>中奖订单</li>
+					<li class='width-25 fleft center bg-white'>待出票订单</li>
+					<li class='width-25 fleft center bg-white'>待开奖订单</li>
+					<li class='width-10 fleft center bg-white'>流 单</li>
+				</ul>
+			</div>
+			<dl>
+				<dd class='show'>
+					<ul class='content fleft width-100'>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_win.html'><span class='fleft content-left'><img src='images/mybet/dcball.png' class='fleft'/><span class='fleft lpadding-2'>双色球<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>4.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str' style='color:#B81C18'>5.00元<br/><span class='gray font-12rem'>已发奖</span></span><img src='images/mybet/award.png' class='fright award'/></span></li>
+						<li class='fleft width-100 bg-white'><span class='fleft content-left'><img src='images/mybet/dcball.png' class='fleft'/><span class='fleft lpadding-2'>双色球<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>10.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未中奖<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_havenot_out.html'><span class='fleft content-left'><img src='images/mybet/36-7.png' class='fleft'/><span class='fleft lpadding-2'>36选7<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未出票<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_havenot.html'><span class='fleft content-left'><img src='images/mybet/3d.png' class='fleft'/><span class='fleft lpadding-2'>3D<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未开奖<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_win.html'><span class='fleft content-left'><img src='images/mybet/36-7.png' class='fleft'/><span class='fleft lpadding-2'>36选7<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>4.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str' style='color:#B81C18'>5.00元<br/><span class='gray font-12rem'>已发奖</span></span><img src='images/mybet/award.png' class='fright award'/></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_flow.html'><span class='fleft content-left'><img src='images/mybet/3d.png' class='fleft'/><span class='fleft lpadding-2'>3D<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str orange'>流单<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_win.html'><span class='fleft content-left'><img src='images/mybet/dcball.png' class='fleft'/><span class='fleft lpadding-2'>双色球<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>4.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str' style='color:#B81C18'>5.00元<br/><span class='gray font-12rem'>已发奖</span></span><img src='images/mybet/award.png' class='fright award'/></span></li>
+						<li class='fleft width-100 bg-white'><span class='fleft content-left'><img src='images/mybet/dcball.png' class='fleft'/><span class='fleft lpadding-2'>双色球<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>10.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未中奖<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_havenot_out.html'><span class='fleft content-left'><img src='images/mybet/36-7.png' class='fleft'/><span class='fleft lpadding-2'>36选7<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未出票<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_havenot.html'><span class='fleft content-left'><img src='images/mybet/3d.png' class='fleft'/><span class='fleft lpadding-2'>3D<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未开奖<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_win.html'><span class='fleft content-left'><img src='images/mybet/36-7.png' class='fleft'/><span class='fleft lpadding-2'>36选7<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>4.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str' style='color:#B81C18'>5.00元<br/><span class='gray font-12rem'>已发奖</span></span><img src='images/mybet/award.png' class='fright award'/></span></li>
+						<li class='fleft width-100 bg-white bborder' onclick='dumpUrl(this);' data='betdetails_flow.html'><span class='fleft content-left'><img src='images/mybet/3d.png' class='fleft'/><span class='fleft lpadding-2'>3D<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str orange'>流单<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+					</ul>
+				</dd>
+				<dd>
+					<ul class='content fleft width-100'>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_win.html'><span class='fleft content-left'><img src='images/mybet/dcball.png' class='fleft'/><span class='fleft lpadding-2'>双色球<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>4.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str' style='color:#B81C18'>5.00元<br/><span class='gray font-12rem'>已发奖</span></span><img src='images/mybet/award.png' class='fright award'/></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_win.html'><span class='fleft content-left'><img src='images/mybet/36-7.png' class='fleft'/><span class='fleft lpadding-2'>36选7<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>4.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str' style='color:#B81C18'>5.00元<br/><span class='gray font-12rem'>已发奖</span></span><img src='images/mybet/award.png' class='fright award'/></span></li>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_win.html'><span class='fleft content-left'><img src='images/mybet/dcball.png' class='fleft'/><span class='fleft lpadding-2'>双色球<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>4.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str' style='color:#B81C18'>5.00元<br/><span class='gray font-12rem'>已发奖</span></span><img src='images/mybet/award.png' class='fright award'/></span></li>
+						<li class='fleft width-100 bg-white bborder' onclick='dumpUrl(this);' data='betdetails_win.html'><span class='fleft content-left'><img src='images/mybet/36-7.png' class='fleft'/><span class='fleft lpadding-2'>36选7<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>4.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str' style='color:#B81C18'>5.00元<br/><span class='gray font-12rem'>已发奖</span></span><img src='images/mybet/award.png' class='fright award'/></span></li>
+					</ul>
+				</dd>
+				<dd>
+					<ul class='content fleft width-100'>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_havenot_out.html'><span class='fleft content-left'><img src='images/mybet/36-7.png' class='fleft'/><span class='fleft lpadding-2'>36选7<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未出票<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white bborder' onclick='dumpUrl(this);' data='betdetails_havenot_out.html'><span class='fleft content-left'><img src='images/mybet/36-7.png' class='fleft'/><span class='fleft lpadding-2'>36选7<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>单式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未出票<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+					</ul>
+				</dd>
+				<dd>
+					<ul class='content fleft width-100'>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_havenot.html'><span class='fleft content-left'><img src='images/mybet/3d.png' class='fleft'/><span class='fleft lpadding-2'>3D<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未开奖<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white bborder' onclick='dumpUrl(this);' data='betdetails_havenot.html'><span class='fleft content-left'><img src='images/mybet/3d.png' class='fleft'/><span class='fleft lpadding-2'>3D<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str gray'>未开奖<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+					</ul>
+				</dd>
+				<dd>
+					<ul class='content fleft width-100'>
+						<li class='fleft width-100 bg-white' onclick='dumpUrl(this);' data='betdetails_flow.html'><span class='fleft content-left'><img src='images/mybet/3d.png' class='fleft'/><span class='fleft lpadding-2'>3D<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str orange'>流单<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+						<li class='fleft width-100 bg-white bborder' onclick='dumpUrl(this);' data='betdetails_flow.html'><span class='fleft content-left'><img src='images/mybet/3d.png' class='fleft'/><span class='fleft lpadding-2'>3D<br/><span class='font-12rem gray'>第2015043期<br/>2015-4-16</span></span></span><span class='content-middle fleft center'>2.00元<br/><span class='font-12rem gray'>复式</span></span><span class='content-right fright'><img src='images/more/go.png' class='fright'/><span class='fright center str orange'>流单<br/><!-- <span class='gray font-12rem'>已发奖</span> --></span><!-- <img src='images/mybet/award.png' class='fright award'/> --></span></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<p class="center gray more">加载更多...</p>
+	</div>
+	<div class='foot-nav bg-black width-100 fleft white'>
+		<ul>
+			<li class='nav-item center fleft' onclick='dumpUrl(this);' data='square.html'><img src='images/public/nav_square.png'/><br/>彩票广场</li>
+			<li class='nav-item center fleft' onclick='dumpUrl(this);' data='lotteryabout.html'><img src='images/public/nav_aboutme.png'/><br/>开奖公告</li>
+			<li class='nav-item center fleft' onclick='dumpUrl(this);' data='message.html'><img src='images/public/nav_message.png'/><br/>彩票资讯</li>
+			<li class='nav-item center fleft red'><img src='images/public/nav_my_sel.png'/><br/>我的彩票</li>
+			<li class='nav-item center fleft' onclick='dumpUrl(this);' data='more.html'><img src='images/public/nav_more.png'/><br/>更 多</li>
+		</ul>
+	</div>
+</body>
+</html>

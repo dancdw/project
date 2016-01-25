@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>增加财务记录</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$("li").click(function() {
+			$(".item-group").addClass("hidden");
+			$(".item-group").eq($(this).index()).removeClass("hidden");
+		});
+	});
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+	</div>
+	<div class='main'>
+		<div class="xianjinjz_add tborder">
+			<ul class="center clearfix"><li class="fleft"><input type="radio" name="key" checked="checked" id="duigong"><label for="duigong">对公财务</label></li><li class="fleft"><input type="radio" name="key" id="geren"><label for="geren">个人财务</label></li></ul>
+			<table class="width-100 font-14rem item-group bborder">
+				<tr><td class="right">类型：</td><td><select><option>收入</option><option>支出</option></select></td></tr>
+				<tr><td class="right">金额：</td><td><input type="text" class="width-100"></td></tr>
+				<tr><td class="right">有无票据：</td><td><input type="radio" name="duigongpiaoju" class="font-9rem" id="you" checked="checked"><label for="you">有</label><input type="radio" name="duigongpiaoju" id="wu"><label for="wu">无</label></td></tr>
+				<tr><td class="right">票据上传：</td><td><span class="aborder">拍照上传</span><span class="aborder">本地上传</span></td></tr>
+				<tr><td class="right ftop">事由：</td><td><textarea rows="3" class="width-100"></textarea></td></tr>
+				<tr><td class="right">时间：</td><td><input type="text" class="width-100"></td></tr>
+			</table>
+			<table class="width-100 font-14rem item-group bborder hidden">
+				<tr><td class="right">类型：</td><td><select><option>支出</option><option>收入</option></select></td></tr>
+				<tr><td class="right">金额：</td><td><input type="text" class="width-100"></td></tr>
+				<tr><td class="right">有无票据：</td><td><input type="radio" name="gerenpiaoju" class="font-9rem" id="you"><label for="you">有</label><input type="radio" name="gerenpiaoju" id="wu" checked="checked"><label for="wu">无</label></td></tr>
+				<tr><td class="right">票据上传：</td><td><span class="aborder">拍照上传</span><span class="aborder">本地上传</span></td></tr>
+				<tr><td class="right ftop">事由：</td><td><textarea rows="3" class="width-100"></textarea></td></tr>
+				<tr><td class="right">时间：</td><td><input type="text" class="width-100"></td></tr>
+			</table>
+			<button class="submit block auto"></button>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>历史交易</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+//页面跳转
+function dumpUrl(obj) {
+	var url = $(obj).attr('data');
+	window.location.href=url;
+}
+$(function() {
+	$(".img-group").click(function() {
+		$(".img-group").each(function() {
+			var filename_arr = $(this).find('img').attr('src').split('.');
+			if(filename_arr[0].indexOf('_sel') != '-1') {
+				filename_arr[0] = filename_arr[0].substr(0, filename_arr[0].indexOf('sel') - 1);
+			} else {
+				filename_arr[0] = filename_arr[0] + '_sel';
+			}
+			$(this).find('img').attr('src', filename_arr.join('.'));
+		});
+		$(".img-group").removeClass("this");
+		$(this).addClass("this");
+		$("dd").removeClass("this");
+		$("dd").eq($(".img-group").index(this)).addClass("this");
+	});
+})
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='myaccount.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>我的账户</span></li>
+			<li class='nav-middle center fleft'>历史交易</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='history_trade'>
+			<ul class="width-100 bg-white clearfix tag-group gray">
+				<li class='fleft item'><span class='img-group clearfix auto this'><span class='fleft icon-img'><img src='images/mylottery/recharge_sel.png' class='fright'/></span><span class='str fright'>充值</span></span></li>
+				<li class='fleft zx'><span class='line lborder'></span></li>
+				<li class='fleft item'><span class='img-group clearfix auto'><span class='fleft icon-img'><img src='images/mylottery/cash.png' class='fright'/></span><span class='str fright'>提现</span></span></li>
+			</ul>
+			<div class='space_hx'></div>
+			<dl>
+				<dd class='this'>
+					<table class='width-100'>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>充值100元</td></tr>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>充值100元</td></tr>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>充值100元</td></tr>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>充值100元</td></tr>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>充值100元</td></tr>
+					</table>
+				</dd>
+				<dd>
+					<table class='width-100'>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>提现200元</td></tr>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>提现200元</td></tr>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>提现200元</td></tr>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>提现200元</td></tr>
+						<tr><td class='center'>支付宝</td><td class='center'>2015-4-12 18:30:50</td><td class='center'>提现200元</td></tr>
+					</table>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>

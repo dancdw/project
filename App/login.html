@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>登录</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' data='more.html' onclick='dumpUrl(this);'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>更多</span></li>
+			<li class='nav-middle center fleft'>登录</li>
+			<li class='nav-right right fright' data='register.html' onclick='dumpUrl(this);'>注册</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='login'>
+			<div class='input-group clearfix'><div class='fleft width-100 aborder bg-white'><span class='fleft icon'><img src='images/login/user.png'/></span><input type='text' placeholder='用户名'/></div></div>
+			<div class='input-group clearfix'><div class='fleft width-100 aborder bg-white'><span class='fleft icon'><img src='images/login/pass.png'/></span><input type='password' placeholder='密码'/></div></div>
+			<div class='input-group verify clearfix'><div class='fleft width-100 aborder bg-white'><input type='text' placeholder='验证码'/><span class='verify-code bg-gary fright center'>TMDD</span></div></div>
+			<div class='input-group remember border-0 clearfix'><span class='fleft icon'><img src='images/login/log_def.png' class='log_def fleft'/></span><span class='str fleft'>十天内自动登录</span><span class='fright blue forget' >忘记密码？</span></div>
+			<div class='input-group'><button class='submit-btn-red log-btn fillet-5' onclick='dialog({"title":"异常","content":"您目前没有可用网络，请检查网络情况","buttons":{"queding":"确定"}, "callback": function(res) { alert(res) }});'>登 录</button></div>
+		</div>
+		<script>
+			$(function() {
+				// 打勾切换
+				$('.log_def').click(function() {
+					var filename_arr = $(this).attr('src').split('/');
+					if(filename_arr[2] == 'log_sel.png') {
+						filename_arr[2] = 'log_def.png';
+					} else {
+						filename_arr[2] = 'log_sel.png';
+					}
+					$(this).attr('src', filename_arr.join('/'));
+				});
+			})
+		</script>
+	</div>
+</body>
+</html>

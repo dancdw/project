@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>购物车</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$(".count").click(function() { // 选择数量
+			var o = $(this).html(); // 运算符
+			var num = parseInt($(this).parent().find(".number").html()); // 当前数量
+			var price = parseFloat($(this).parent().prev().find(".price").html()) / num; // 当前单价
+			var len = $("tr").length; // 商品数量
+			var totle_num = 0; // 总数量
+			var totle_money = 0; // 总价
+			if(o == "+") {
+				$(this).parent().find(".number").html(num+1);
+				$(this).parent().prev().find(".price").html((price*(num+1)).toFixed(2));
+			} else {
+				if(num <= 1){ return; }
+				$(this).parent().find(".number").html(num-1);
+				$(this).parent().prev().find(".price").html((price*(num-1)).toFixed(2));
+			}
+			for(var i = 0; i < len; i++) {
+				totle_num += parseInt($(".number").eq(i).html());
+				totle_money += parseFloat($(".price").eq(i).html());
+			}
+			$(".totle_num").html(totle_num);
+			$(".totle_money").html(totle_money.toFixed(2)); 
+      	});
+	});
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<span class="absolute title">购物车</span>
+	</div>
+	
+	<div class="main">
+		<div class="pro_cart">
+			<table class="width-100 font-12rem">
+				<tr class="tborder">
+					<td><img src="images/1.jpg" /></td><td class="font-10rem"><h1>单品长沙发20081211</h1><p>黄色</p>￥<span class="price">3200.00</span></td><td><span class="fleft center count aborder bg-black white">-</span><span class="fleft center number aborder">1</span><span class="fleft center count aborder bg-black white">+</span></td><td class="center"><span>商品详情</span><br/><span>移出</span></td>
+				</tr>
+				<tr class="tborder">
+					<td><img src="images/2.jpg" /></td><td class="font-10rem"><h1>单品长沙发20081211</h1><p>黄色</p>￥<span class="price">1200.00</span></td><td><span class="fleft center count aborder bg-black white">-</span><span class="fleft center number aborder">1</span><span class="fleft center count aborder bg-black white">+</span></td><td class="center"><span>商品详情</span><br/><span>移出</span></td>
+				</tr>
+			</table>
+			<div class="buy fixed width-100">
+	    		<div class="width-90 auto font-12rem">
+	    			<div class="fleft">共计商品<span class="totle_num">2</span>件<br/>总价：<span class="totle_money">4400.00</span></div><div class="fright account font-14rem center">去结算</div>
+	    		</div>
+	    	</div>
+		</div>
+	</div>
+</body>
+</html>

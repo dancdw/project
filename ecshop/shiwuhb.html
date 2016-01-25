@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>事务汇报</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$(".item").click(function() {
+			if( $(this).next().is(":hidden") ) {
+				$(this).children().eq(0).addClass("open");
+				$(this).next().show();
+			} else {
+				$(this).children().eq(0).removeClass("open");
+				$(this).next().hide();
+			}
+		});
+		/* $(document).on("touchstart", function(){// 文档完整高度 - 浏览器可视高度  = 文档顶部
+			if(document.body.scrollTop >= document.body.scrollHeight - document.body.clientHeight) {
+				load_data();
+				// 从这里开始请求数据
+			}
+		}); */
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+	</div>
+	
+	<div class='main'>
+		<div class="gongzuojh shiwuhb">
+			<table class="width-100 font-10rem center item-group">
+				<caption class="bborder tborder font-14rem fweight">事务汇报</caption>
+				<tr class="item">
+					<td>2015-08-01</td><td></td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="2">
+						<table class="font-10rem width-100" >
+							<tr><td rowspan="4"><label class="fleft">图片：</label><img src="images/1.jpg"><br/><img src="images/1.jpg"></td><td><label>日期：</label></td></tr>
+							<tr><td><label>地址：</label></td></tr>
+							<tr><td><label>事件：</label></td></tr>
+							<tr><td><label>我的看法：</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>2015-08-02</td><td></td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="2">
+						<table class="font-10rem width-100" >
+							<tr><td rowspan="4"><label class="fleft">图片：</label><img src="images/1.jpg"><br/><img src="images/1.jpg"></td><td><label>日期：</label></td></tr>
+							<tr><td><label>地址：</label></td></tr>
+							<tr><td><label>事件：</label></td></tr>
+							<tr><td><label>我的看法：</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>2015-08-03</td><td></td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="2">
+						<table class="font-10rem width-100" >
+							<tr><td rowspan="4"><label class="fleft">图片：</label><img src="images/1.jpg"><br/><img src="images/1.jpg"></td><td><label>日期：</label></td></tr>
+							<tr><td><label>地址：</label></td></tr>
+							<tr><td><label>事件：</label></td></tr>
+							<tr><td><label>我的看法：</label></td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

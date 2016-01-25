@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>我的账户</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+	// 页面跳转
+	function dumpUrl(obj) {
+		var url = $(obj).attr('data');
+		window.location.href=url;
+	}
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='mylottery.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>我的彩票</span></li>
+			<li class='nav-middle center fleft'>我的账户</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='myaccount'>
+			<div class='user-group width-80 clearfix'>
+				<div class='photo fleft relative'><img src='images/myaccout/userhead_icon.png' class='fleft touxiang'/><div class='camera fleft absolute'><img src='images/myaccout/camera.png' class='fleft'/></div></div>
+				<div class='userinfo-str fleft'><span class='font-18rem'>Hardy</span><br/>账户余额：<span class='red font-18rem'>96.00元</span></div>
+			</div>
+			<div class='btn-group width-80 clearfix'>
+				<button class='bg-red border-0 white fleft fillet-5' onclick='dumpUrl(this);' data='recharge_money.html'>充 值</button><button class='bg-orange border-0 white fright fillet-5' onclick='dumpUrl(this);' data='carrycash_one.html'>提 现</button>
+			</div>
+			<div class='question width-100 bg-gary fleft'>
+				<div class='fleft center rborder'>充值遇到问题？</div>
+				<div class='fleft center'>提现遇到问题？</div>
+			</div>
+			<div class='main-item fleft width-100 tborder bg-white' onclick='dumpUrl(this);' data='userinfo.html'><span class='icon fleft'><img src='images/myaccout/userinfo.png'/></span><div class='fleft str'>身份信息</div><span class='icon-2 fright'><img src='images/myaccout/go.png' /></span><div class='fright gray str'>待补全</div></div>
+			<div class='main-item fleft width-100 tborder bborder bg-white' onclick='dumpUrl(this);' data='bankinfo_patch.html'><span class='icon fleft'><img src='images/myaccout/bankcard.png'/></span><div class='fleft str'>银行信息补全</div><span class='icon-2 fright'><img src='images/myaccout/go.png' /></span><!-- <div class='fright gray str'>待补全</div> --></div>
+			<div class='space_hx'></div>
+			<div class='main-item fleft width-100 tborder bg-white' onclick='dumpUrl(this);' data='manage_paypwd.html'><span class='icon fleft'><img src='images/myaccout/key.png'/></span><div class='fleft str'>支付密码设置</div><span class='icon-2 fright'><img src='images/myaccout/go.png'/></span><!-- <div class='fright gray str'>待补全</div> --></div>
+			<div class='main-item fleft width-100 tborder bg-white' onclick='dumpUrl(this);' data='history_trade.html'><span class='icon fleft'><img src='images/myaccout/deal.png'/></span><div class='fleft str'>历史交易查询</div><span class='icon-2 fright'><img src='images/myaccout/go.png'/></span><!-- <div class='fright gray str'>待补全</div> --></div>
+			<div class='main-item fleft width-100 tborder bborder bg-white' onclick='dumpUrl(this);' data='history_order.html'><span class='icon fleft'><img src='images/myaccout/order.png'/></span><div class='fleft str'>历史订单查询</div><span class='icon-2 fright'><img src='images/myaccout/go.png'/></span><!-- <div class='fright gray str'>待补全</div> --></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+#bg{ display:none; position:fixed; top:0%; left:0%; width:100%; height:100%; background-color:black; z-index:1001; -moz-opacity:0.7; opacity:0.70; filter:alpha(opacity=70);}
+#clist {
+	position:absolute;
+	top:20px;
+	margin-left:-500px;
+	left:50%;
+    clear: both;
+    padding: 0 0 20px;
+    width: 1000px;
+	font-size: 14px;
+    line-height: 200%;
+    text-align: left;
+	background-color:#fff;
+	display:none;
+	z-index:1002;
+	padding-top:20px;
+}
+#clist dt {
+    clear: both;
+    color: #545454;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 0 3px 10px;
+    width: 50px;
+}
+#clist .close-1{ position:absolute; right:5px; top:0px; background:url("../images/close1.png") repeat-x center; width:36px; height:36px;}
+
+#clist dt.searchcity {
+    width: 287px;
+}
+#clist dd.popular {
+    width: 681px;
+}
+#clist dt.quyu {
+    background: rgba(0, 0, 0, 0) url("../images/line_dot.gif") repeat-x scroll left center;
+    clear: none;
+    color: #dcdcdc;
+    font-size: 16px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 2px;
+    width: 990px;
+}
+#clist dt.quyu span {
+    background: #f9f9f9 none repeat scroll 0 0;
+    padding-right: 4px;
+}
+#clist dt.searchcity input {
+    border: 0 none;
+    height: 20px;
+    line-height: 20px;
+    padding: 2px 4px;
+    vertical-align: middle;
+    width: 127px;
+}
+#clist dd {
+    float: left;
+    margin-left: 0;
+    padding: 3px 0;
+    width: 936px;
+}
+#clist dd a {
+    font-size: 12px;
+    margin-right: 12px;
+    text-decoration: none;
+    white-space: nowrap;
+	color:#4d4d4d;
+}
+#clist dd a:hover{ color:#ef3c18;}
+#popularspan {
+    padding: 3px 14px 3px 34px;
+}
+#searchspan {
+    padding: 3px 14px 3px 0;
+}
+#inputdiv {
+    border: 1px solid #cdcdcd;
+    display: inline-block;
+    width: 135px;
+}
+/* #clist dt.searchcity input {
+    border: 0 none;
+    height: 20px;
+    line-height: 20px;
+    padding: 2px 4px;
+    vertical-align: middle;
+    width: 127px;
+} */

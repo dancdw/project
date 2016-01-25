@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+	$(function () {
+	      // Slideshow
+	      $("#slider").responsiveSlides({
+	    	auto:true,             // Boolean: 设置是否自动播放
+	    	speed:800,            // Integer: 动画持续时间，单位毫秒
+	    	timeout:2000,          // Integer: 图片之间切换的时间，单位毫秒
+	    	pager: true,           // Boolean: 是否显示页码
+	    	nav: true,             // Boolean: 是否显示左右导航箭头（即上翻下翻）
+	    	prevText: "prev",   		// String: 往前翻按钮的显示文本
+	    	nextText: "next",       	// String: 往后翻按钮的显示文本
+	      });
+	});
+	$(window).load(function() {
+  	  // 轮转导航定位
+	      $(".rslides_tabs").css("top", $(".top-nav").height() + $("#slider li").height() - 10);
+	      var h = $(".top-nav").height() + $("#slider li").height() - $(".prev").height();
+	      $(".prev").css("top", h);
+	      $(".next").css("top", h);
+    });
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="uf width-100 aborder search fillet-5">
+			<input type="text" class="fleft uf-1 border-0"/><span class="fleft icon-search"></span>
+		</div>
+	</div>
+	
+	<div class='main'>
+		<div class='index'>
+	    	<ul id="slider">
+		        <li class="pic1"><img alt="图片加载中..." src="images/b1.jpg" /></li>
+		        <li class="pic2"><img alt="图片加载中..." src="images/b2.jpg" /></li>
+		        <li class="pic3"><img alt="图片加载中..." src="images/b3.jpg" /></li>
+		        <li class="pic4"><img alt="图片加载中..." src="images/b4.jpg" /></li>
+	    	</ul>
+	    	<div class="width-100 bg-white clearfix body bborder">
+	    		<ul class="menu-group width-90 auto clearfix">
+					<li class="center fleft" onclick="dumpUrl(this);" url-data="market.html"><img src="./images/public/shichang.png"/><br/>逛市场</li>
+					<li class="center fleft" onclick="dumpUrl(this);" url-data="wuliu.html"><img src="./images/public/wuliu.png"/><br/>物流</li>
+					<li class="center fleft" onclick="dumpUrl(this);" url-data="supplier.html"><img src="./images/public/user.png"/><br/>供应商</li>
+					<li class="center fleft" onclick="dumpUrl(this);" url-data="peisongaz.html"><img src="./images/public/peisong.png"/><br/>配送安装</li>
+				</ul>
+				<ul class="menu-group width-90 auto clearfix">
+					<li class="center fleft" onclick="dumpUrl(this);" url-data="yuangonggl.html"><img src="./images/public/guanli.png"/><br/>员工管理</li>
+					<li class="center fleft" onclick="dumpUrl(this);" url-data="gongzuoadd.html"><img src="./images/public/jilu.png"/><br/>业务员</li>
+					<li class="center fleft" onclick="dumpUrl(this);" url-data="xianjinjz.html"><img src="./images/public/jizhang.png"/><br/>现金记账</li>
+					<li class="center fleft" onclick="dumpUrl(this);" url-data="jiajuzb.html"><img src="./images/public/zhoubian.png"/><br/>家具周边</li>
+				</ul>
+	    	</div>
+	    	<div class="space_hx"></div>
+	    	<div class="tborder bg-white width-100 active">
+	    		<div class="title width-90 auto">
+	    			<span class="red">秒杀</span>·16点场<span class="aborder">00</span>:<span class="aborder">50</span>:<span class="aborder">42</span><span class="fright icon"><img src="./images/public/go.png"/></span><span class="fright">全场9.9元起</span>
+	    		</div>
+	    		<div class="picMarquee-left width-95 auto">
+					<div class="bd">
+						<div class="picList">
+							<ul class="clearfix">
+								<li class="fleft center rborder"><img src="./images/1.jpg"><br/>￥9.90</li>
+								<li class="fleft center rborder"><img src="./images/2.jpg"><br/>￥9.90</li>
+								<li class="fleft center rborder"><img src="./images/3.jpg"><br/>￥9.90</li>
+							</ul>
+							<ul class="clearfix">
+								<li class="fleft center rborder"><img src="./images/1.jpg"><br/>￥9.90</li>
+								<li class="fleft center rborder"><img src="./images/2.jpg"><br/>￥9.90</li>
+								<li class="fleft center rborder"><img src="./images/3.jpg"><br/>￥9.90</li>
+							</ul>
+							<ul class="clearfix">
+								<li class="fleft center rborder"><img src="./images/1.jpg"><br/>￥9.90</li>
+								<li class="fleft center rborder"><img src="./images/2.jpg"><br/>￥9.90</li>
+								<li class="fleft center rborder"><img src="./images/3.jpg"><br/>￥9.90</li>
+							</ul>
+							<ul class="clearfix">
+								<li class="fleft center rborder"><img src="./images/1.jpg"><br/>￥9.90</li>
+								<li class="fleft center rborder"><img src="./images/2.jpg"><br/>￥9.90</li>
+								<li class="fleft center rborder"><img src="./images/3.jpg"><br/>￥9.90</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="uf width-100 tborder other">
+					<div class="uf-1 rborder">手机专享</div>
+					<div class="uf-1 rborder">优惠券</div>
+					<div class="uf-1">寻·觅</div>
+				</div>
+	    	</div>
+		</div>	
+	</div>
+	<script>
+	jQuery(".picMarquee-left").slide({mainCell:".bd .picList",autoPage:true,effect:"top",autoPlay:true});
+	</script>
+	<ul class="footer-nav width-100">
+		<li class="white center fleft"><img src="./images/public/home.png"/><br/>首页</li>
+		<li class="white center fleft" onclick="dumpUrl(this);" url-data="pro_category.html"><img src="./images/public/product.png"/><br/>产品</li>
+		<li class="white center fleft" onclick="dumpUrl(this);" url-data="client.html"><img src="./images/public/client.png"/><br/>客户</li>
+		<li class="white center fleft" onclick="dumpUrl(this);" url-data="order_list.html"><img src="./images/public/order.png"/><br/>订单</li>
+		<li class="white center fleft" onclick="dumpUrl(this);" url-data="my.html"><img src="./images/public/my.png"/><br/>我的</li>
+	</ul>
+</body>
+</html>

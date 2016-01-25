@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>充值</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+//页面跳转
+function dumpUrl(obj) {
+	var url = $(obj).attr('data');
+	window.location.href=url;
+}
+$(function() {
+	$('.sel').click(function() {
+		$(this).toggleClass('aborder');
+		$(this).find('img').toggleClass('vihidden');
+	});
+})
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='myaccount.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>我的账户</span></li>
+			<li class='nav-middle center fleft'>充值</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='recharge_money'>
+			<img src="images/pay/recharge_money_banner.png"/>
+			<div class="width-100 bborder">
+				<div class='input-group clearfix'>
+					<div class='fleft zhifb'><img src="images/pay/alipay1.png"/></div><div class='fleft font-12rem str relative'>支付宝支付<br/><div class='gray'>推荐有支付宝账号的用户使用</div><div class='sel absolute fillet-25'><img src="images/pay/true1.png"/></div></div>
+				</div>
+			</div>
+			<div class='space_hx'></div>
+			<div class="width-100">
+				<div class='input-group clearfix'>
+					<input type='text' placeholder='请输入充值金额' class='aborder'/><span class='fleft'>元</span>
+				</div>
+				<div class='width-95 auto'>提醒：至少充值10元起。</div>
+			</div>
+			<div class='space_hx'></div><div class='space_hx'></div>
+			<div class='input-group'>
+				<button class='submit-btn-red center fillet-5 shadow' type='button'>充 值</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

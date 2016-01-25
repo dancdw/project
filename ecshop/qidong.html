@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<style>
+.ui-content{
+	padding:0;
+}
+</style>
+<script>
+$(document).on("pageinit",function(event){
+	$("#pageone").on("swiperight",function(event){
+		return;
+	});
+	$("#pageone").on("swipeleft",function(event){
+		$("#one").click();
+	});
+	$("#pagetwo").on("swiperight",function(event){
+		$("#two").click();
+	});
+	$("#pagetwo").on("swipeleft",function(event){
+		$("#three").click();
+	});
+});
+
+</script>
+</head>
+<body class="ui-mobile-viewport ui-overlay-c">
+
+<div id="pageone" data-role="page" data-url="pageone" tabindex="0" class="ui-page ui-body-c ui-page-active" style="min-height: 400px;">
+  <div data-role="content" class="ui-content" role="main">
+    <img src="images/qidong.png">
+    <a href="#pagetwo" data-transition="slide" id="one">转到页面二</a>
+  </div>
+</div> 
+
+<div id="pagetwo" data-role="page" data-url="pagetwo" tabindex="0" class="ui-page ui-body-c" style="min-height: 400px;">
+  <div data-role="content" class="ui-content" role="main">
+    <img src="images/qidong1.png">
+    <a href="#pageone" data-transition="slide" data-direction="reverse" id="two">返回页面一</a>
+    <a href="#pagethree" data-transition="slide" id="three">转到页面三</a>
+  </div>
+</div> 
+
+<div id="pagethree" data-role="page" data-url="pagetwo" tabindex="0" class="ui-page ui-body-c" style="min-height: 400px;">
+  <div data-role="content" class="ui-content" role="main">
+    <img src="images/qidong1.png">
+    <a href="#pagetwo" data-transition="slide" data-direction="reverse" id="three">返回页面一</a>
+  </div>
+</div>
+</html>

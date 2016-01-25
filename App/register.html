@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>注册</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+	// 页面跳转
+	function dumpUrl(obj) {
+		var url = $(obj).attr('data');
+		window.location.href=url;
+	}
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='more.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>更多</span></li>
+			<li class='nav-middle center fleft'>注册</li>
+			<li class='nav-right right fright' onclick='dumpUrl(this);' data='login.html'>登录</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='register'>
+			<div class='input-group clearfix'><div class='fleft width-100 aborder bg-white'><input type='text' placeholder='请输入用户名' class='width-100 border-0 gray'/></div></div>
+			<div class='input-group clearfix'><div class='fleft width-100 aborder bg-white'><input type='password' placeholder='密码（6到8位数字、字母组成）' class='width-100 border-0 gray'/></div></div>
+			<div class='input-group clearfix'><div class='fleft width-100 aborder bg-white'><input type='password' placeholder='重复输入密码' class='width-100 border-0 gray'/></div></div>
+			<div class='input-group clearfix'><div class='fleft width-100 aborder bg-white'><input type='text' placeholder='请输入手机号码' class='width-100 border-0 gray'/></div></div>
+			<div class='input-group verify clearfix'><div class='fleft width-100 aborder bg-white'><input type='text' placeholder='请输入验证码' class='fleft border-0 gray'/><span class='fright bg-pink orange center lborder verify'>获取验证码</span></div></div>
+			<div class='input-group agreement clearfix'><div class='fleft width-100'><span class="icon fleft"><img src='images/login/log_def.png' class='reg_def'/></span><span class='str fleft'>我已阅读并同意<span class='red'>《彩票广场用户协议》</span></span></div></div>
+			<div class='input-group'><button class='submit-btn-red fillet-5'>免费注册</button></div>
+		</div>
+		<script>
+			$(function() {
+				// 打勾切换
+				$('.reg_def').click(function() {
+					var filename_arr = $(this).attr('src').split('/');
+					if(filename_arr[2] == 'log_sel.png') {
+						filename_arr[2] = 'log_def.png';
+					} else {
+						filename_arr[2] = 'log_sel.png';
+					}
+					$(this).attr('src', filename_arr.join('/'));
+				});
+			})
+		</script>
+	</div>
+</body>
+</html>

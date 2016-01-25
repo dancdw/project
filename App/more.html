@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>更多</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+	// 页面跳转
+	function dumpUrl(obj) {
+		var url = $(obj).attr('data');
+		window.location.href=url;
+	}
+	$(function() {
+		// 开关切换
+		$('.switch img').click(function() {
+			var filename_arr = $(this).attr('src').split('/');
+			if(filename_arr[2] == 'open.png') {
+				filename_arr[2] = 'close.png';
+			} else {
+				filename_arr[2] = 'open.png';
+			}
+			$(this).attr('src', filename_arr.join('/'));
+		});
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft vihidden' data='more.html' onclick='dumpUrl(this);'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>更多</span></li>
+			<li class='nav-middle center fleft'>更 多</li>
+			<li class='nav-right right fright vihidden' data='register.html' onclick='dumpUrl(this);'>注册</li>
+		</ul>
+	</div>
+	<div class='main bg-gary'>
+		<div class='more clearfix'>
+			<div class='title fleft width-100 bg-white'><span class='username fleft font-26rem fweight'>Hardy</span><span class='logout-user fright bg-gary brown fillet-2 aborder'>注销用户</span></div>
+			<div class='main-item fleft width-100 tborder bborder bg-white' data='manage_pwd.html' onclick='dumpUrl(this);'><span class='fleft icon'><img src='images/more/pass.png'/></span><span class='str fleft '>密码管理</span><span class='go fright'><img src='images/more/go.png'/></span></div>
+			<div class='space_hx'></div>
+			<div class='main-item fleft width-100 tborder bg-white'><span class='fleft icon'><img src='images/more/push.png'/></span><span class='str fleft'>推送开关</span><span class='open-btn fright switch'><img src='images/more/open.png'/></span></div>
+			<div class='main-item fleft width-100 tborder bg-white'><span class='fleft icon'><img src='images/more/rock.png'/></span><span class='str fleft'>摇一摇机选</span><span class='open-btn fright switch'><img src='images/more/open.png'/></span></div>
+			<div class='main-item fleft width-100 tborder bborder bg-white'><span class='fleft icon'><img src='images/more/voice.png'/></span><span class='str fleft '>声音效果</span><span class='open-btn fright switch'><img src='images/more/close.png'/></span></div>
+			<div class='space_hx'></div>
+			<div class='main-item fleft width-100 tborder bg-white' data='feedback.html' onclick='dumpUrl(this);'><span class='fleft icon'><img src='images/more/idea.png'/></span><span class='str fleft '>意见反馈</span><span class='go fright'><img src='images/more/go.png'/></span></div>
+			<div class='main-item fleft width-100 tborder bg-white' data='share.html' onclick='dumpUrl(this);'><span class='fleft icon'><img src='images/more/share.png'/></span><span class='str fleft '>分享</span><span class='go fright'><img src='images/more/go.png'/></span></div>
+			<div class='main-item fleft width-100 tborder bg-white' data='help.html' onclick='dumpUrl(this);'><span class='fleft icon'><img src='images/more/help.png'/></span><span class='str fleft '>投注帮助</span><span class='go fright'><img src='images/more/go.png'/></span></div>
+			<div class='main-item fleft width-100 tborder bg-white' data='about.html' onclick='dumpUrl(this);'><span class='fleft icon'><img src='images/more/about.png'/></span><span class='str fleft '>关于我们</span><span class='go fright'><img src='images/more/go.png'/></span></div>
+		</div>
+	</div>
+	<div class='foot-nav bg-black width-100 fleft white'>
+		<ul>
+			<li class='nav-item center fleft' data='square.html' onclick='dumpUrl(this);'><img src='images/public/nav_square.png'/><br/>彩票广场</li>
+			<li class='nav-item center fleft' data='lotteryabout.html' onclick='dumpUrl(this);'><img src='images/public/nav_aboutme.png'/><br/>开奖公告</li>
+			<li class='nav-item center fleft' data='message.html' onclick='dumpUrl(this);'><img src='images/public/nav_message.png'/><br/>彩票资讯</li>
+			<li class='nav-item center fleft' data='mylottery.html' onclick='dumpUrl(this);'><img src='images/public/nav_my.png'/><br/>我的彩票</li>
+			<li class='nav-item center fleft red'><img src='images/public/nav_more_sel.png'/><br/>更 多</li>
+		</ul>
+	</div>
+</body>
+</html>

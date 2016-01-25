@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>投注</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+	// 页面跳转
+	function dumpUrl(obj) {
+		var url = $(obj).attr('data');
+		window.location.href=url;
+	}
+	$(function() {
+		// 选中与被选中
+		$('.icon-true img').click(function() {
+			var filename_arr = $(this).attr('src').split('.');
+			if(filename_arr[0].indexOf('sel') != '-1') {
+				filename_arr[0] = filename_arr[0].substr(0, filename_arr[0].indexOf('sel') - 1);
+			} else {
+				filename_arr[0] = filename_arr[0] + '_sel';
+			}
+			$(this).attr('src', filename_arr.join('.'));
+		});
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' data='square.html' onclick='dumpUrl(this);'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>彩票广场</span></li>
+			<li class='nav-middle center fleft'>投注</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='bet'>
+			<div>
+				<ul class='tag width-100 clearfix white'>
+					<li class='fleft bg-red icon-item center relative'><span class='icon-add relative'><img src="images/bet/icon_touzhu_add.png"/></span><span class='font-12rem str'>增加首选号码</span></li>
+					<li class='fleft bg-red icon-item center relative'><span class='icon-add relative'><img src="images/bet/icon_touzhu_add.png"/></span><span class='font-12rem str'>增加首选号码</span></li>
+					<li class='fleft bg-orange icon-item center'><span class='fleft font-12rem clear-str'>清除列表</span></li>
+				</ul>
+			</div>
+			<div class='width-100 main-item clearfix tborder bborder'>
+				<span class='fleft gray main-item-left'>双色球</span><span class='fleft main-item-middle center'>07 11 13 23 27 30 <span class='blue'>02</span></span><span class='fright main-item-right'><img src="images/bet/icon_touzhu_delete_n.png" class='fright'/></span>
+			</div>
+			<div class='width-100 main-item clearfix bborder'>
+				<span class='fleft gray main-item-left'>双色球</span><span class='fleft main-item-middle center'>07 11 13 23 27 30 <span class='blue'>02</span></span><span class='fright main-item-right'><img src="images/bet/icon_touzhu_delete_n.png" class='fright'/></span>
+			</div>
+			<div class='multiple'>倍数：<input type='text' placeholder='1倍'></div>
+			<div class='space_hx'></div>
+			<div class='width-100 clearfix deal'><span class='fleft icon-true'><img src="images/bet/true.png" /></span><span class='font-12rem fleft deal-str'>我已阅读并同意<span class='blue'>《O2O投注协议》</span></span></div>
+ 		</div>
+	</div>
+	<div class='foot-nav bg-black fleft width-100 white'>
+		<ul>
+			<li class='nav-left fleft'><span class='center bg-brown fillet-5 fleft'>共 计</span></li>
+			<li class='nav-middle fleft'><p class='center' style="height:3rem; line-height:3rem;">共2注  4元</p></li>
+			<li class='nav-right fright'><span class='center bg-red fillet-5 fright'>付 款</span></li>
+		</ul>
+	</div>
+</body>
+</html>

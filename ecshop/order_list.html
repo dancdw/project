@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>订单列表</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		load_more(); // 加载更多
+		$("li").click(function() {
+			$("li").removeClass("sel");
+			$(this).addClass("sel");
+			$("table").addClass("hidden");
+			$("table").eq($(this).index()).removeClass("hidden");
+		});
+	})
+</script>
+</head>
+<body class="bg-white">
+	<div class='top-nav width-95 auto clearfix'>
+		<span class="font-12rem cart fright"></span>
+		<div class="icon-back fleft"></div>
+		<div class="uf aborder search fillet-5" style="width:75%">
+			<input type="text" class="fleft uf-1 border-0" style="background:#fff"/><span class="fleft icon-search"></span>
+		</div>
+	</div>
+	<div class='main'>
+		<div class="order_list">
+			<div class="font-12rem width-95 auto search">
+				<div class="uf center">
+					<span class="fleft relative">从</span><input type="text" class="font-10rem fleft relative"/><span class="fleft relative">到</span><input type="text" class="font-10rem fleft relative"/><span class="query fleft relative">查询</span><span class="uf-1 bg-lgray">近三天</span><span class="uf-1 bg-lgray">近一周</span><span class="uf-1 bg-lgray">近一月</span>
+				</div>
+			</div>
+			<ul class="type clearfix tborder bborder">
+				<li class="sel">全部</li><li>等待付款</li><li>等待收货</li><li>等待确认收货</li><li>交易成功</li><li>交易取消</li>
+			</ul>
+			<table class="font-10rem width-100">
+				<tr class="bborder">
+					<td><img src="images/1.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>3200.00</span><br/>数量：1</td>
+					<td class="center"><span class="red">交易成功</span><br/><span>详情</span></td>
+				</tr>
+				<tr class="bborder">
+					<td><img src="images/2.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>5400.00</span><br/>数量：3</td>
+					<td class="center"><span class="red">交易取消</span><br/><span>详情</span></td>
+				</tr>
+				<tr class="bborder">
+					<td><img src="images/3.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>5400.00</span><br/>数量：3</td>
+					<td class="center"><span class="red">等待付款</span><br/><span>详情</span></td>
+				</tr>
+				<tr class="bborder">
+					<td><img src="images/4.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>5400.00</span><br/>数量：3</td>
+					<td class="center"><span class="red">等待收货</span><br/><span>详情</span></td>
+				</tr>
+				<tr class="bborder">
+					<td><img src="images/5.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>5400.00</span><br/>数量：3</td>
+					<td class="center"><span class="red">等待确认收货</span><br/><span>详情</span></td>
+				</tr>
+			</table>
+			<table class="font-10rem width-100 hidden">
+				<tr class="bborder">
+					<td><img src="images/1.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>3200.00</span><br/>数量：1</td>
+					<td class="center"><span class="red">等待付款</span><br/><span>详情</span></td>
+				</tr>
+			</table>
+			<table class="font-10rem width-100 hidden">
+				<tr class="bborder">
+					<td><img src="images/5.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>3200.00</span><br/>数量：1</td>
+					<td class="center"><span class="red">等待收货</span><br/><span>详情</span></td>
+				</tr>
+			</table>
+			<table class="font-10rem width-100 hidden">
+				<tr class="bborder">
+					<td><img src="images/4.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>3200.00</span><br/>数量：1</td>
+					<td class="center"><span class="red">等待确认收货</span><br/><span>详情</span></td>
+				</tr>
+			</table>
+			<table class="font-10rem width-100 hidden">
+				<tr class="bborder">
+					<td><img src="images/3.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>3200.00</span><br/>数量：1</td>
+					<td class="center"><span class="red">交易成功</span><br/><span>详情</span></td>
+				</tr>
+			</table>
+			<table class="font-10rem width-100 hidden">
+				<tr class="bborder">
+					<td><img src="images/2.jpg"/></td>
+					<td>订单号：sa12345678<br/>创建时间：2015-05-05</td>
+					<td>总价：￥<span>3200.00</span><br/>数量：1</td>
+					<td class="center"><span class="red">交易取消</span><br/><span>详情</span></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

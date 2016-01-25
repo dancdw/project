@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>现金记账</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$("li").click(function() {
+			$("li").addClass("bborder");
+			$(this).removeClass("bborder");
+			$(".item-group").addClass("hidden");
+			$(".item-group").eq($(this).index()).removeClass("hidden");
+		});
+		$(".item").click(function() {
+			if( $(this).next().is(":hidden") ) {
+				$(this).children().eq(0).addClass("open");
+				$(this).next().show();
+			} else {
+				$(this).children().eq(0).removeClass("open");
+				$(this).next().hide();
+			}
+		});
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<div class="fright bg-blue white add-cashacc" onclick="dumpUrl(this);" url-data="xianjinjz_add.html">+增加财务记录</div>
+	</div>
+	
+	<div class='main'>
+		<div class="xianjinjz">
+			<ul class="ul-tag tborder font-12rem">
+				<li class="fleft center rborder">对公财务</li><li class="fleft center bborder">个人财务</li>
+			</ul>
+			<table class="width-100 font-12rem center item-group">
+				<tr class="center bborder"><th>类型</th><th>金额</th><th>日期</th><th>是由</th></tr>
+				<tr class="item">
+					<td><span class="bg-brown white type">支出</span></td><td>2000.00</td><td>2015-08-01</td><td>吃饭</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem" >
+							<tr><td><label>当前结余：</label>2000.00元</td></tr>
+							<tr><td><label>具体时间：</label>2015-08-01 12:30</td></tr>
+							<tr><td><label>事由：</label>吃饭（请客户在五星级酒店吃饭）</td></tr>
+							<tr><td><label>是否有票据：</label>有</td></tr>
+							<tr><td><label>票据图片：</label><img src="images/4.jpg"/></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td><span class="bg-green white type">收入</span></td><td>3400.00</td><td>2015-08-01</td><td>收入</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem" >
+							<tr><td><label>当前结余：</label>2000.00元</td></tr>
+							<tr><td><label>具体时间：</label>2015-08-01 12:30</td></tr>
+							<tr><td><label>事由：</label>吃饭（请客户在五星级酒店吃饭）</td></tr>
+							<tr><td><label>是否有票据：</label>有</td></tr>
+							<tr><td><label>票据图片：</label><img src="images/1.jpg"/></td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="width-100 font-12rem center item-group hidden">
+				<tr class="center bborder"><th>类型</th><th>金额</th><th>日期</th><th>是由</th></tr>
+				<tr class="item">
+					<td><span class="bg-green white type">收入</span></td><td>23400.00</td><td>2015-08-01</td><td>收入</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem" >
+							<tr><td><label>当前结余：</label>32000.00元</td></tr>
+							<tr><td><label>具体时间：</label>2015-08-01 12:30</td></tr>
+							<tr><td><label>事由：</label>吃饭（请客户在五星级酒店吃饭）</td></tr>
+							<tr><td><label>是否有票据：</label>有</td></tr>
+							<tr><td><label>票据图片：</label><img src="images/3.jpg"/></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td><span class="bg-brown white type">支出</span></td><td>32000.00</td><td>2015-08-01</td><td>吃饭</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem" >
+							<tr><td><label>当前结余：</label>2000.00元</td></tr>
+							<tr><td><label>具体时间：</label>2015-08-01 12:30</td></tr>
+							<tr><td><label>事由：</label>吃饭（请客户在五星级酒店吃饭）</td></tr>
+							<tr><td><label>是否有票据：</label>有</td></tr>
+							<tr><td><label>票据图片：</label><img src="images/2.jpg"/></td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

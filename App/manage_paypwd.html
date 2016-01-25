@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>支付密码管理</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+//页面跳转
+function dumpUrl(obj) {
+	var url = $(obj).attr('data');
+	window.location.href=url;
+}
+</script>
+</head>
+<body style='background-color:#fff;'>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='myaccount.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>我的账户</span></li>
+			<li class='nav-middle center fleft'>支付密码管理</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='manage_paypwd manage'>
+			<div class='width-100 clearfix bborder' onclick='dumpUrl(this);' data='paypwd_find.html'><div class='width-95 auto'><div class='fleft str'>找回支付密码</div><div class='fright icon-img'><img src='images/more/go.png'/></div></div></div>
+			<div class='width-100 clearfix bborder' onclick='dumpUrl(this);' data='paypwd_edit.html'><div class='width-95 auto'><div class='fleft str'>修改支付密码</div><div class='fright icon-img'><img src='images/more/go.png'/></div></div></div>
+		</div>
+	</div>
+</body>
+</html>

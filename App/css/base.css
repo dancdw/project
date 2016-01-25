@@ -1,0 +1,522 @@
+/*属性重置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ margin:0; padding:0;}
+table { border-collapse:collapse; border-spacing:0;}
+fieldset,img,abbr,acronym { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal;}
+ol,ul{ list-style:none; }
+a{ text-decoration:none; color:inherit; }
+a:active{ background-color:inherit; color:#fff; }
+caption,th{ text-align:left; }
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal; }
+q:before,q:after{ content:''; }
+textarea{ resize:none; }
+
+/*通用父子盒子嵌套浮动问题解决，开始*/
+.clearfix:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+.clearfix{ display: inline-block; } 
+* html .clearfix{ height: 1%; }  
+.clearfix { display: block; }
+.vihidden { visibility: hidden; }
+.hidden { display:none; }
+.show{ display: block !important; }
+
+/*间隙层开始*/
+.space_hx { /*横向间隙*/ clear:both; width:100%; height:15px; font-size:1px; overflow:hidden; }
+.space_zx { /*纵向间隙*/ float:left; width:15px; font-size:1px; overflow:hidden; }
+.span_h10 { float:left; font-size:1px; width:10px; }
+
+
+/*属性初始化*/
+html{ font-family:"微软雅黑","宋体"; font-size:14px; font-size: 62.5%; }
+body{ font-size:1.4rem; background-color:#F6F6F6;}
+img { width:100%; }
+.img-responsive{ max-width:100%; height:auto; }
+
+/*字体颜色*/
+.red{ color:#EF3C18 !important; }
+.gray{ color:#A5A5A5 !important; }
+.blue{ color:#0045D0 !important; }
+.orange{ color:#FF8A0D !important; }
+.black{ color:#333333 !important; }
+.white{ color:#ffffff !important; }
+.brown{ color:#666666 !important; }
+.croci{ color:#C88019 !important;}
+.ball-red{ color:#B81C18; }
+.ball-blue{ color:#0045D0; }
+
+
+/*背景颜色*/
+.bg-red{ background-color:#bf1d18; }
+.bg-orange{ background-color:#FF8A0D; }
+.bg-white{ background-color:#ffffff; }
+.bg-gary{ background-color:#E7E7E7; }
+.bg-brown{ background-color:#434343; }
+.bg-black{ background-color:#282828; }
+.bg-pink{ background-color:#FFF4D7; }
+.bg-thik{ background-color:#FFF9F9; }
+.bg-html{ background-color:#f6f6f6; }
+
+/*定位*/
+.relative{ position:relative; }
+.absolute{ position:absolute; }
+.fixed{ position:fixed; }
+.fleft{ float:left; }
+.fright{ float:right; }
+.auto{ margin:auto; }
+.padding-0{ padding:0% !important; }
+.margin-0{ margin:0% !important; }
+.block{ display:block; }
+.lpadding-2{ padding-left:2%; }
+.lmargin-2{ margin-left:2%; }
+.lmargin-3{ margin-left:3%; }
+.lmargin-5{ margin-left:5%; }
+.bmargin-3{ margin-bottom:3%; }
+
+/*文本*/
+.width-5{ width:5%; }
+.width-10{ width:10%; }
+.width-15{ width:15%; }
+.width-20{ width:20%; }
+.width-25{ width:25%; }
+.width-30{ width:30%; }
+.width-35{ width:35%; }
+.width-40{ width:40%; }
+.width-50{ width:50%; }
+.width-60{ width:60%; }
+.width-70{ width:70%; }
+.width-80{ width:80%; }
+.width-85{ width:85%; }
+.width-90{ width:90%; }
+.width-95{ width:95%; }
+.width-100{ width:100%; }
+.left{ text-align:left; }
+.right{ text-align:right; }
+.center{ text-align:center; }
+.fillet-2{ -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+.fillet-5{ -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+.fillet-15{ -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px;}
+.fillet-25{ -moz-border-radius:25px; -webkit-border-radius:25px; border-radius:25px;}
+.opacity-9{ filter:alpha(opacity=90); -moz-opacity:0.9; opacity:0.9; }
+.font-8rem{ font-size:0.8rem; }
+.font-10rem{ font-size:1.0rem; }
+.font-12rem{ font-size:1.2rem; }
+.font-16rem{ font-size:1.6rem; }
+.font-18rem{ font-size:1.8rem; }
+.font-20rem{ font-size:2.0rem; }
+.font-22rem{ font-size:2.2rem; }
+.font-24rem{ font-size:2.4rem; }
+.font-26rem{ font-size:2.6rem; }
+.border-0{ border:0px; }
+.tborder { border-top:1px solid #CDCDCD !important; }
+.lborder { border-left:1px solid #CDCDCD !important; }
+.rborder { border-right:1px solid #CDCDCD !important; }
+.bborder { border-bottom:1px solid #CDCDCD !important; }
+.aborder { border:1px solid #CDCDCD !important; }
+.shadow{box-shadow:0px 0px 7px 0px #C7C7C7; -webkit-box-shadow:0 0 7px 0 #C7C7C7; -moz-box-shadow:0 0 7px 0 #C7C7C7; }
+.fweight{ font-weight:600; }
+
+/*不同尺寸单独设置*/
+@media screen and (min-device-width: 400px){}
+@media screen and (min-device-width: 432px){}
+@media screen and (min-device-width: 550px){}
+@media screen and (min-device-width: 640px){}
+@media screen and (min-device-width: 800px){}
+
+/*公共部分*/
+.top-nav ul{ top:0%; position:fixed; z-index:9999; font-size:1.8rem; }
+.top-nav ul .nav-left{ margin-left:1rem; padding:2rem 0rem; width:9rem;}
+.top-nav ul .nav-left .icon-left{ width:1rem; margin:0.5rem 0.5rem 0rem 0rem;}
+.top-nav ul .nav-left .icon-down{ width:1.2rem; margin:1rem 0rem 0rem 0.5rem;}
+.top-nav ul .nav-middle{ width:40%; position:absolute; left:50%; margin-left:-20%; padding:2rem 0rem;}
+.top-nav ul .nav-right{ margin-right:1rem; padding-top:2rem; width:7rem;}
+.top-nav ul .nav-right img{ width:2.5rem; }
+
+.main{ padding-top:6rem; padding-bottom:7rem; float:left; width:100%;}
+.shake{ width:10rem; bottom:10rem; right:0rem; position:fixed; z-index:9999;}
+.foot-nav{ bottom:0rem; position:fixed; z-index:9999;}
+.foot-nav li{ width:20%; padding:1.5rem 0rem; font-size:1.2rem; }
+.foot-nav .nav-left{ margin-left:1rem; }
+.foot-nav .nav-left span{ width:6rem; height:3rem; line-height:3rem; }
+.foot-nav .nav-right{ margin-right:1rem; }
+.foot-nav .nav-right span{ width:6rem; height:3rem; line-height:3rem; }
+.foot-nav .nav-middle{ width:60%; position:absolute; left:50%; margin-left:-30%;}
+.foot-nav .nav-item{ width:20%; padding:0.5rem 0rem 0.5rem 0rem !important;}
+.foot-nav .nav-item img{ width:2.5rem; margin-bottom:0.3rem; margin-top:0.3rem;}
+
+
+#reload{ background-color:#CDCDCD; left:50%; margin-left:-57px; padding:.3rem .5rem .6rem .5rem; position:absolute; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; z-index:1002;}
+#reload img{ width:1.5rem; top:.3rem; padding:0 .3rem; position:relative; }
+#bg{ position:absolute; top:0%; left:0%; width:100%; height:100%; background-color: black; z-index:1001; -moz-opacity:0.7; opacity:.70; filter:alpha(opacity=70);}
+#dialog{ border:1px solid #fff; background-color:#fff; position:absolute; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; z-index:1002;}
+#dialog #title{ color:#2D2D2D; height:5rem; font-size:2.2rem; text-align:center; line-height:5rem; }
+#dialog #content{ border-top:1px solid #808080; color:#2D2D2D; height:3rem; font-size:1.4rem; text-align:center; line-height:3rem; padding:1rem 1rem; }
+#dialog #buttons{ position:relative; width:100%; background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.4)),to(rgba(255, 255, 255, 0))); background-image:-webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%); background-image:linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%); background-image:-ms-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%); display:-moz-box; display:-webkit-box; display:box; -moz-box-orient:horizontal; -webkit-box-orient:horizontal; box-orient:horizontal;}
+#dialog #buttons button{ color:#fff; display:block; position:relative; -moz-box-flex:1; -webkit-box-flex:1; box-flex:1; margin:1rem; padding:1.5rem; box-shadow:-2px 2px 2px #999; -webkit-box-shadow:-2px 2px 2px #999; -moz-box-shadow:-2px 2px 2px #999; border:0; background:url(../images/line_red_long.png) no-repeat center center;}
+#load-data img{ width:1.5rem; top:.3rem; padding:0 .3rem; position:relative; }
+
+
+.submit-btn-red{ background:url(../images/line_red_long.png) no-repeat center center; width:100%; color:#fff !important; border:0px; padding:1rem 0rem; box-shadow:-2px 2px 2px #999; -webkit-box-shadow:-2px 2px 2px #999; -moz-box-shadow:-2px 2px 2px #999; }
+.btn-orange{ background:url(../images/line_orange.png) no-repeat center center; color:#fff !important; border:0px; }
+.btn-red{ background:url(../images/line_red_long.png) no-repeat center center; color:#fff !important; border:0px; }
+.input-group{ width:94%; margin:1rem auto; }
+.input-group input{ padding:1rem 1rem; float:left; border:0rem; color:#A5A5A5; }
+
+
+
+/*登录*/
+.login{ margin-top:.6rem;}
+.login .input-group .icon{  }
+.login .input-group img{ padding:1rem 0rem 0rem 0.5rem; width:2rem;}
+.login .input-group input{ width:91%; }
+.login .verify input{ width:70%; }
+.login .verify-code{ width:30%; padding:0.9rem 0rem;}
+.login .remember .str{ width:50%; padding:1rem 0rem 0rem 0.5rem;}
+.login .remember .forget{ padding:1rem 0rem 0rem 0.5rem; }
+
+/*注册*/
+.register{ margin-top:.6rem; }
+.register .verify input{ width:64%; }
+.register .verify .verify{ width:35%; padding:0.9rem 0rem;}
+.register .agreement .icon{ width:2rem; padding:1rem 0.5rem 0rem 0rem;}
+.register .agreement .str{ padding:1rem 0rem 0rem 0rem; }
+
+/*更多*/
+.more .title .username{ padding:2rem 5rem;}
+.more .title .logout-user{ padding:1rem; margin:1.5rem 2rem;}
+.more .main-item .str{ width:10rem; padding:2rem 0rem; }
+.more .main-item .icon{ width:2.5rem; margin:1.5rem 1.5rem 0rem;}
+.more .main-item .go{ width:1rem; margin:2rem 1.5rem 0rem; }
+.more .main-item .open-btn{ width:5rem; margin:1.2rem 1.5rem 0rem; }
+
+/*我的投注*/
+.mybet .this{ border-bottom:2px solid #B81C18; }
+.mybet dd{ display:none; }
+.mybet .tag li{ padding:1.5rem 0rem;}
+.mybet .content{ margin-top:1rem; }
+.mybet .content li{ border-top:1px solid #CDCDCD;}
+.mybet .content li .content-left{ padding:1rem 0rem 1rem 0.5rem; width:43%;}
+.mybet .content li .content-left img{ width:5rem; }
+.mybet .content li .content-middle{ padding-top:2rem; width:20%;}
+.mybet .content li .content-right{ width:32%; padding:1rem 0rem;}
+.mybet .content li .content-right img{ width:1rem; padding:1.5rem 1rem 0rem;}
+.mybet .content li .content-right .award{ width:2rem; padding:1.2rem 0rem 0rem 0rem !important;}
+.mybet .content li .content-right .str{ padding-top:1rem;}
+
+
+/*支付*/
+.pay .title{ padding:3rem 0rem;}
+.pay input{ border:1px solid #999999; margin:1rem 0rem;}
+
+/*充值*/
+.recharge_money .input-group span{ padding:1rem; }
+.recharge_money .input-group .str{ padding:1rem 0.5rem; width:78%;}
+.recharge_money .input-group .sel{ width:2rem; top:1.5rem; right:0rem; }
+.recharge_money .input-group .zhifb{ padding:0.5rem 0rem; width:4rem;}
+
+/*提现*/
+.carrycash .title{ padding:10% 0%;}
+.carrycash .top{ padding:1rem 0rem 0.5rem 0rem; }
+.carrycash .balance{ margin:5rem 6%; }
+.carrycash .balance img{ width:5rem; height:5rem; }
+.carrycash .balance-str{ padding-left:5%; margin:5rem 0rem;}
+.carrycash .input-group input{ border:1px solid #999999; }
+.carrycash .verify input{ border:0px; width:63%;}
+.carrycash .verify .verify-code{ padding:0.9rem 0rem; width:30%;}
+.carrycash_one .input-group input{ border:0px; width:40%;}
+.carrycash_one .input-group span{ padding:0.85rem 1rem;}
+
+/*我的彩票*/
+.mylottery .title ul{ bottom:0%; }
+.mylottery .title ul li{ width:33.3333%;}
+.mylottery .title ul li img{ width:2rem; margin-right:.5rem;}
+.mylottery .title ul li span{ width:60%; }
+.mylottery .title ul li .item{ width:90%; margin:1rem 0rem;}
+.mylottery .title .account{ top:20%; left:10%; width:25%;}
+.mylottery .title .freeze{ top:20%; right:10%; width:20%; text-align:right;}
+.mylottery .title .img{ width:1rem;}
+.mylottery .title .go{ width:.6rem;}
+.mylottery .title .str{ padding:0rem .6rem;}
+
+/*我的账户*/
+.myaccount{ margin-top:.6rem;}
+.myaccount .user-group{ margin:1rem auto; }
+.myaccount .user-group .photo{ width:6rem; margin-right:1rem; }
+.myaccount .user-group .photo .touxiang{ width:6rem; }
+.myaccount .user-group .photo .camera{ width:2rem; right:0%; bottom:0%;}
+.myaccount .user-group .userinfo-str{ width:60%;}
+.myaccount .btn-group{ margin:1rem auto;}
+.myaccount .btn-group button{ padding:.7rem 13%; -moz-box-shadow:5px 5px 3px #999; -webkit-box-shadow:5px 5px 3px #999; box-shadow:5px 5px 3px #999;}
+.myaccount .question{ border:1px solid #cccccc; margin:.6rem 0rem;}
+.myaccount .question div{ width:49%; padding:1rem 0rem;}
+.myaccount .main-item .str{ padding:1rem 0rem;}
+.myaccount .main-item .icon{ width:2.5rem; padding:1rem .5rem 0rem; }
+.myaccount .main-item .icon-2{ width:0.6rem; padding:1.5rem .6rem 0rem;}
+
+/*彩票资讯*/
+.message .tag{ margin:auto;}
+.message .tag li{ width:33%; height:3rem; }
+.message .tag li .this{ border-bottom:2px solid #B81C18; color:#B81C18; }
+.message .tag img{ width:2.5rem; top:.5rem; left:-.3rem; }
+.message .tag .tag-item{ width:60px; margin-left:-30px; left:50%; padding-bottom:0.6rem; }
+.message dl dd{ display:none; }
+.message dl .this{ display:block; }
+.message .tdashed{ border-top:1px dotted #ccc; }
+.message .bdashed{ border-bottom:1px dotted #ccc; }
+.message .main-item .str{ padding:1rem 0.5rem;}
+.message .main-item .icon-2{ width:.6rem; padding:1.4rem 0.6rem; }
+.message .prophy-group{ padding:2rem 0rem; }
+.message .prophy-group .prophy{ width:80px; margin-left:-40px; left:50%; top:0%; }
+.message .prophy-group .prophy span{ padding-top:1.2rem;}
+.message .prophy-group .prophy .icon-3{ width:2.5rem; padding-top:1rem;}
+
+/*彩票资讯详情*/
+.message_detail{ margin-top:.6rem; }
+.message_detail p{ margin-bottom:0.6rem; }
+.message_detail .content{ text-align:justify; text-justify:inter-ideograph; }
+
+/*活动*/
+.activity .content{ padding:1rem 0rem; }
+.activity .icon-go{ padding:2rem 1rem 0rem 0rem; width:0.7rem; }
+.activity .verify-code{ padding:0.9rem 0.5rem; }
+
+/*开奖公告|双色球|26选5|36选7|3D|好彩1*/
+.lotteryabout{ margin-top:.6rem; }
+.lotteryabout .title{ padding-bottom:.6rem; background:url(../images/runlotteryabout/title.png) no-repeat; background-size:100% 3rem;}
+.lotteryabout .title .str{ width:220px; margin-left:-110px; left:50%; }
+.lotteryabout .dotted{ border-bottom:1px dotted #ccc; }
+.lotteryabout .main-item{ width:95%; margin:0% auto 1rem auto;}
+.lotteryabout .main-item .str{ padding:1.5rem 0rem;}
+.lotteryabout .main-item .middle{ width:40%; margin-left:-20%; left:55%;}
+.lotteryabout .main-item .go{ width:.7rem; padding:2rem 0rem 0rem 1rem;}
+.lotteryabout .ul-item li{ width:14%; text-align:center;}
+.lotteryabout .ul-item li img{ width:4.5rem; }
+.lotteryabout .ul-item span{ top:0rem; left:0rem; width:100%; padding:1rem 0rem;}
+.lotteryabout .ul-item .str{ padding-bottom:2%; }
+
+/*开奖公告详情|双色球|26选5|36选7|3D|好彩1*/
+.lotteryabout_detail .title{ padding-top:1rem; }
+.lotteryabout_detail .icon-img{ margin-left:1rem; width:20%; }
+.lotteryabout_detail .icon-img img{ width:6rem; float:right;}
+.lotteryabout_detail .ul-item{ padding-top:2rem; }
+.lotteryabout_detail .ul-item li{ width:14%; text-align:center; }
+.lotteryabout_detail .ul-item li img{ width:4.5rem; }
+.lotteryabout_detail .ul-item span{ top:0rem; left:0rem; width:100%; padding:1rem 0rem;}
+.lotteryabout_detail .middle {border-top:1px solid #FAE68C; border-bottom:1px solid #FAE68C; margin:1rem 0rem; }
+.lotteryabout_detail .middle .middle-left{ width:40%; padding:1rem 5%; }
+.lotteryabout_detail .middle .middle-right{ width:39%; padding:1rem 5%; border-left:1px solid #FAE68C;}
+.lotteryabout_detail .middle .icon{ width:35%;}
+.lotteryabout_detail .middle .icon img{ width:3.5rem; float:right; }
+.lotteryabout_detail .middle .str{ margin-left:.2rem; }
+.lotteryabout_detail .main-item span{ width:33%; padding:1rem 0rem; }
+.lotteryabout_detail .main-item .left-red{ background:url(../images/runlotteryabout/red.png) no-repeat -6px center;}
+.lotteryabout_detail .main-item .left-blue{ background:url(../images/runlotteryabout/blue.png) no-repeat -6px center;}
+.lotteryabout_detail .main-item .left-orange{ background:url(../images/runlotteryabout/orange.png) no-repeat -6px center;}
+.lotteryabout_detail .main-item .left-green{ background:url(../images/runlotteryabout/green.png) no-repeat -6px center;}
+
+
+/*投注*/
+.bet .tag{ margin:1rem 0rem; }
+.bet .tag .icon-item:first-child{ margin-left:1%;}
+.bet .tag .icon-item{ width:32%; margin-right:1%; height:3.5rem; line-height:3.5rem; }
+.bet .tag .icon-item .icon-add{ top:0.5rem; right:0.2rem; }
+.bet .tag .icon-item .icon-add img{ width:1.9rem;}
+.bet .tag .icon-item .str{ }
+.bet .tag .icon-item .clear-str{ width:100%; }
+
+.bet .main-item .main-item-left{ width:20%; padding:1rem 0rem; margin-left:5%;}
+.bet .main-item .main-item-middle{ width:50%; padding:1rem 0rem; }
+.bet .main-item .main-item-right{ width:20%; padding:1rem 0rem; margin-right:5%;}
+.bet .main-item img{ max-width:1.9rem; }
+.bet .multiple{ margin:2rem 1rem;}
+.bet .multiple input{ padding:0.7rem; border:1px solid #ccc; color:#ccc; width:5rem; }
+.bet .deal{ margin-top:10rem; }
+.bet .deal .icon-true{ width:1.7rem; margin:0rem 0.5rem 0rem 1.5rem;}
+
+/*站点风采*/
+.sitemien .prev{background:url("../images/themes.gif") no-repeat left top; height:30px; width:20px; background-size:40px 30px; position:absolute; text-indent:-9999px; z-index:9999; margin-left:1rem; left:0;}
+.sitemien .next{background:url("../images/themes.gif") no-repeat right top; height:30px; width:20px; background-size:40px 30px; position:absolute; text-indent:-9999px; right:0; z-index:9999; margin-right:1rem;}
+.sitemien .rslides_tabs{ left:50%; position:absolute; z-index:9999; margin-left:-30px; }
+.sitemien .rslides_tabs li{ float:left; width:.7rem; height:.7rem;  margin:0 0.3rem; background-color:#F08CA2; text-indent:-9999px; -moz-border-radius:25px; -webkit-border-radius:25px; border-radius:25px;}
+.sitemien .rslides_tabs .rslides_here{ background-color:#FE5B28; }
+.sitemien table{ margin:1rem auto; }
+.sitemien table img{ width:9rem; }
+.sitemien table tr td{ vertical-align:top; }
+.sitemien table tr td:first-child{ width:6rem; }
+.sitemien .main-item{ position:relative; display:-moz-box; display:-webkit-box; display:box; -moz-box-orient:horizontal; -webkit-box-orient:horizontal; box-orient:horizontal; }
+.sitemien .main-item .title{ margin-top:0.6rem; vertical-align:middle; }
+.sitemien .main-item .title img{ width:5rem; position:relative;}
+.sitemien .main-item .content{padding:.6rem .3rem; position:relative; -moz-box-flex:1; -webkit-box-flex:1; box-flex:1;}
+.sitemien .main-item .time{ right:.6rem; top:.5rem;}
+.sitemien .main-item .go{ right:.6rem; top:3rem; width:0.6rem;}
+
+/*彩票广场*/
+.square .search{padding:0.5rem 0rem; height:2rem; line-height:2rem; }
+.square .search input{ margin-left:5%; padding:0.3rem 1rem;}
+.square .search img{ width:1.8rem; padding-top:0.3rem; margin-right:1rem; }
+.square table .icon-star{ width:1.5rem; float:left; margin-left:.3rem; }
+.square table .icon-into{ padding:0.5rem 1rem; }
+.square table tr:first-child td{ padding-top:1rem; }
+.square table tr:last-child td{ padding-bottom:1rem; }
+.square table tr td:first-child{ padding-left:1rem; }
+.square table tr td:last-child{ padding-right:1rem; width:10%; }
+.square table img{ max-width:100%; }
+
+
+/*购彩公共*/
+/*双色球**36选7**26选5*/
+.ftc .top .top-left{ margin-left:2%; padding-top:1.5rem;}
+.ftc .top .top-right{ margin-right:3%; padding-top:1.5rem;}
+.ftc .tag ul .tag-item{ width:15%; padding:1rem 0rem; margin:0rem 2%;}
+.ftc .tag ul .random{ padding:0.3rem 4%; margin:0.7rem 5% 0rem 0rem;}
+.ftc .tag .this{ border-bottom:2px solid #B81C18; }
+.ftc dl dd{ display:none; padding-bottom:17%; }
+.ftc dl .this{ display:block; }
+.ftc .title-red{ border-left:3px solid #EF3C18; padding-left:2%; margin:1rem 0%;} 
+.ftc .title-org{ border-left:3px solid #FF8A0D; padding-left:2%; margin:1rem 0%;} 
+.ftc .title-blue{ border-left:3px solid #0045D0; padding-left:2%; margin:1rem 0%;}
+.ftc .ul-ball-red{ padding-bottom:2rem;}
+.ftc .ul-ball-red li{ width:14%; }
+.ftc .ul-ball-red li img{ width:4rem; }
+.ftc .ul-ball-red li span{ top:1rem; left:50%; width:2rem; margin-left:-1rem; }
+.ftc .ul-ball-blue{ padding-bottom:2rem; }
+.ftc .ul-ball-blue li{ width:14%; }
+.ftc .ul-ball-blue li img{ width:4rem; }
+.ftc .ul-ball-blue li span{ top:1rem; left:50%; width:2rem; margin-left:-1rem; }
+
+/*好彩1*/
+.ftc_haocai1 .animal-group li{ width:30%; margin:1rem 0% 1rem 2%; text-align:center;}
+.ftc_haocai1 .animal-group li img{ width:9rem; }
+.ftc_haocai1 .season-group li{ width:30%; margin:1rem 10%; text-align:center;}
+.ftc_haocai1 .season-group li img{ width:9rem; }
+.ftc_haocai1 .position-group .full{ width:20%; margin:1rem auto; text-align:center;}
+.ftc_haocai1 .position-group .full img{ width:6rem; }
+.ftc_haocai1 .position-group .big{ text-align:center; height:12rem;}
+.ftc_haocai1 .position-group .big img{ width:12rem; }
+.ftc_haocai1 .position-group .icon-small{ height:12rem; }
+.ftc_haocai1 .position-group .icon-small img{ width:6rem; margin:4rem 1rem 0rem;}
+
+/*3D*/
+.ftc_3d .main-item p{ padding-left:2%; margin:1rem 0rem;}
+.ftc_3d .main-item .digit{ width:25%; margin-top:2rem;}
+.ftc_3d .main-item .ball-group{width:74%; margin:1rem 0rem;}
+.ftc_3d .main-item .ball-group .ball{ width:17%; margin:1%; text-align:center; }
+.ftc_3d .main-item .ball-group .ball span{ top:1rem; left:50%; width:2rem; margin-left:-1rem; }
+.ftc_3d .main-item .ball-group .ball img{ width:4rem; }
+.ftc_3d .hezhi{ padding:1.5rem 0%; }
+.ftc_3d .hezhi p{ text-indent:2rem; }
+.ftc_3d .hezhi .number{ padding-top:2rem;}
+.ftc_3d .hezhi .number .str{ width:10%; margin:0.5rem 1% 0rem;}
+.ftc_3d .hezhi .number .yl{ bottom:1.5rem; left:2%; width:8%; }
+.ftc_3d .hezhi .number .all-ball{ width:88%;}
+.ftc_3d .hezhi .number .all-ball .ball{ width:12.5%; text-align:center; }
+.ftc_3d .hezhi .number .all-ball .ball img{ width:3rem; }
+.ftc_3d .hezhi .number .all-ball .ball-num{ top:0.5rem; left:50%; width:2rem; margin-left:-1rem; }
+.ftc_3d .hezhi .number .all-ball .count{ padding:1.5rem 0rem; }
+
+/*订单支付第一步|订单支付第二步*/
+.payorder{ margin-top:1rem; }
+.payorder .notice{ margin-top:.5rem; } 
+.payorder .order-title{ margin:auto; }
+.payorder .order-title .icon-img{ padding-top:.8rem; width:2rem; }
+.payorder .order-title .str{ padding:1rem .5rem;}
+.payorder .order-body{ margin:auto; padding:1rem 0rem;}
+.payorder .order-body a{ padding:6% 10%; margin-top:-6%;}
+.payorder .pay-body{ margin:auto; }
+.payorder .pay-body span{ margin:.6rem 0rem;}
+.payorder .pay-body .save{ padding:.6rem 1rem;}
+.payorder .pay-body .icon_def{ width:2rem; margin-top:1rem;}
+.payorder .pay-body .icon_alipay{ width:4.5rem; margin:1rem .5rem 0rem 0rem;}
+.payorder .paypass span{ padding:1rem 0rem; }
+
+
+/*投注详情*/
+.betdetails{ margin-top:2rem; }
+.betdetails .notice{ margin-top:2%; } 
+.betdetails .order-title .icon-img{padding-top:0.5rem; width:2rem; }
+.betdetails .order-title .icon-win{ padding-top:0.5rem; width:1.7rem; }
+.betdetails .order-title .lstr{ padding:0.7rem 0.5rem;}
+.betdetails .order-title .rstr{ padding:0.7rem 0rem 0rem 0.5rem;}
+.betdetails .order-title .one-str{ border:1px solid #ef3c18; padding:0% 1rem; margin-top:0.7rem;}
+.betdetails .order-body span{ margin:1rem 0rem; padding:0.3rem;}
+.betdetails .order-body span img{ width:20%; margin-left:2%;}
+.betdetails .order-body .margin-top-3{ margin:1rem 0rem 0rem 0rem;}
+.betdetails .order-body .margin-bottom-3{ margin:0rem 0rem 1rem 0rem;}
+.betdetails .order-body .red-str{ border:1px solid #B81C18; margin:1rem 0rem 0rem 0.2rem; width:1.7rem; height:1.7rem; line-height:1.7rem; text-align:center;}
+.betdetails .order-body .blue-str{ border:1px solid #0045D0; margin:1rem 0rem 0rem 0.2rem; width:1.7rem; height:1.7rem; line-height:1.7rem; text-align:center;}
+.betdetails .order-body ul li{ width:30%; padding:0rem 0.4rem; margin:1rem 0rem;}
+.betdetails .croci{ padding:1rem;}
+
+
+/*用户信息补全*/
+.userinfo{ margin-top:.6rem; }
+.userinfo label{ padding-top:1rem; }
+.userinfo .input-group{ margin:0% 3% !important; }
+
+.userinfo_patch{ margin-top:.6rem; }
+.userinfo_patch .str{ padding:0.6rem 0rem; }
+.userinfo_patch .tel{ padding-left:3%; }
+.userinfo_patch .input-verify{ width:64%; }
+.userinfo_patch .verify{ padding:.9rem 0rem; width:35%;}
+
+/*银行信息补全*/
+.bankinfo_patch{  margin-top:1.5rem; }
+.bankinfo_patch .str{ padding:0.2rem 0rem; }
+.bankinfo_patch .center-str{ margin-left:-10rem; width:20rem; left:50%; }
+
+/*支付密码管理|支付密码找回|新支付密码|密码管理|帮助列表*/
+.manage{ margin-top:0.5rem; }
+.manage .str{ padding:1rem 0rem; }
+.manage .tel{ padding-left:3%; }
+.manage .icon-img{ margin-top:1.2rem; }
+.manage .input-verify{ width:64%; }
+.manage .verify{ padding:1rem 0rem; width:35%;}
+.manage img{ width:1rem; }
+.manage .item{ background:url(../images/more/go.png) no-repeat center right; background-size:1rem; }
+.manage .sel{ background:url(../images/more/sel.png) no-repeat center right; background-size:1.5rem; color:#bf1d18; }
+.manage .item-child{ display:none; padding:1rem 0; text-align:justify; text-justify:inter-ideograph; }
+
+
+/*历史交易*/
+.history_trade{ margin-top:.6rem; }
+.history_trade .tag-group .item{ width:49%; }
+.history_trade .tag-group .item .this{ border-bottom:2px solid #B81C18; color:#B81C18; }
+.history_trade .tag-group .item .img-group{ padding:1rem 0rem; width:7rem; }
+.history_trade .tag-group .item .icon-img{ width:2rem; margin-left:.5rem;}
+.history_trade .tag-group .item .str{ margin-right:.6rem; }
+.history_trade .tag-group .zx{ width:1%; margin:1rem 0rem;}
+.history_trade .tag-group .zx .line{ width:1px; }
+.history_trade dl dd{ display:none; }
+.history_trade dl .this{ display:block; }
+.history_trade table td{ padding:1rem 0rem; }
+.history_trade tr:nth-child(odd){background:#ffffff;}
+.history_trade tr:nth-child(even){background:#FFF9F9;}
+
+/*历史订单*/
+.history_order .tag-group{ margin-top:.6rem; }
+.history_order .tag-group li{ width:20%; padding:1rem 0rem; }
+.history_order .tag-group .this{ border-bottom:2px solid #B81C18; color:#B81C18;}
+.history_order dl dd{ display:none; }
+.history_order dl .this{ display:block; }
+.history_order .date{ width:10%; padding-right:1.5rem; }
+.history_order .main-item{ width:81%; padding:0.5rem 2%; }
+.history_order .main-item .icon-go{ width:0.8rem; margin-top:1rem;}
+.history_order .main-item .icon-award{ width:1.8rem; margin-top:.8rem; }
+.history_order .main-item .content{ margin:.7rem .8rem 0rem .8rem; }
+
+/*分享*/
+.share{ margin-top:10%; }
+.share li{ width:20%; float:left; margin-bottom:10%; }
+
+/*意见反馈*/
+.feedback textarea{ padding:1rem; height:30%; }
+
+/*选择城市*/
+.city .search{padding:0.5rem 0rem; height:2rem; line-height:2rem; }
+.city .search input{ padding:0.3rem 1rem; width:88%; }
+.city .search .icon-img{ width:6%; margin-left:1rem; }
+.city .search img{ width:1.8rem; padding-top:0.3rem; margin-right:1rem; }
+.city p{ width:94%; padding:.5rem 1.5rem; color:#A5A5A5; }
+.city .city-item{ background-color:#F7F7F7; }
+.city .city-item li{ margin:auto; width:95%; padding:1rem .5rem; }
+.city .letter{ right:.5rem; top:12rem; z-index:9999; color:#727272; }
+.city .letter li{ padding:0.3rem 0rem; }

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>修改支付密码</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+//页面跳转
+function dumpUrl(obj) {
+	var url = $(obj).attr('data');
+	window.location.href=url;
+}
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='manage_paypwd.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>支付密码</span></li>
+			<li class='nav-middle center fleft'>修改支付密码</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='manage'>
+			<div class="width-100">
+				<div class='input-group clearfix'><input type='text' placeholder='原支付密码' class='aborder width-100 fleft'/><p class='font-10rem str width-100'><span class='fright blue'>忘记原支付密码？</span></p></div>
+				<div class='input-group clearfix'><input type='text' placeholder='新支付密码' class='aborder width-100 fleft'/><p class='font-10rem str width-100 fleft'>密码由6-20位数字、字母或者字符组成</p></div>
+				<div class='input-group clearfix'><input type='text' placeholder='再次输入新支付密码' class='aborder width-100'/><p class='font-10rem str width-100 fleft'>绑定手机号码：13800138000</p></div>
+				<div class="input-group clearfix"><div class="fleft width-100 aborder bg-white"><input type="text" class="fleft border-0 gray input-verify" placeholder="请输入验证码"><span class="fright bg-pink orange center lborder verify">获取验证码</span></div></div>
+				<div class='space_hx'></div>
+				<div class='input-group'><button class='submit-btn-red fillet-2' data='#' onclick='dumpUrl(this);'>确认修改</button></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

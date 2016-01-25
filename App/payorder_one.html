@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>订单支付</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+	// 页面跳转
+	function dumpUrl(obj) {
+		var url = $(obj).attr('data');
+		window.location.href=url;
+	}
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='#'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>投注</span></li>
+			<li class='nav-middle center fleft'>订单支付</li>
+		</ul>
+	</div>
+	<div class='main bg-gray'>
+		<div class='payorder'>
+			<div class='width-100 clearfix bg-thik tborder bborder font-12rem'>
+				<div class='width-95 order-title'>
+					<span class='fleft icon-img'><img src="images/sitemien/icon_fengcai_1.png"/></span><span class='fleft gray str'>双色球 第2015043期</span>
+				</div>
+			</div>
+			<div class='width-100 clearfix bg-white bborder font-12rem'>
+				<div class='width-90 order-body'>
+					<span>订单金额</span><span class='fright ball-red'>4.0元</span>
+				</div>
+			</div>
+			<div class='space_hx'></div>
+			<div class='width-100 clearfix bg-thik tborder bborder font-12rem'>
+				<div class='width-95 order-title'>
+					<span class='fleft icon-img'><img src="images/pay/icon_touzhu_shenfen.png"/></span><span class='fleft gray str'>双色球 第2015043期</span>
+				</div>
+			</div>
+			<div class='width-100 clearfix bg-white bborder font-12rem'>
+				<div class='width-90 order-body'>
+					<span>投注者姓名</span><span class='fright'>石头的温度</span>
+				</div>
+			</div>
+			<div class='width-100 clearfix bg-white bborder font-12rem'>
+				<div class='width-90 order-body'>
+					<span>投注者联系方式</span><span class='fright'>15888026452</span>
+				</div>
+			</div>
+			<div class='width-100 clearfix bg-white bborder font-12rem'>
+				<div class='width-90 order-body'>
+					<span>投注者身份证号码</span><span class='fright'>445281194505123115</span>
+				</div>
+			</div>
+			<div class='width-100 clearfix bg-white bborder font-12rem'>
+				<div class='width-90 pay-body'>
+					<span class='fright btn-orange fillet-5 save'>修改身份信息</span>
+				</div>
+			</div>
+			<div class='width-95 auto font-10rem gray notice'>注：投注者身份信息关系到大奖领取，如需要修改请下注前修改</div>
+			<div class='space_hx'></div>
+			<div class='width-100 clearfix bg-thik tborder bborder font-12rem'>
+				<div class='width-95 order-title'>
+					<span class='fleft icon-img'><img src="images/pay/icon_touzhu_zhifu.png"/></span><span class='fleft gray str'>双色球 第2015043期</span>
+				</div>
+			</div>
+			<div class='width-100 clearfix bg-white bborder font-12rem'>
+				<div class='width-90 pay-body'>
+					<span class='fleft'>账户余额：<span class='red'>4.0元</span><br/><span class='gray font-10rem'>可用余额：96.00元</span></span><img src="images/bet/true.png" class='fright icon_def'>
+				</div>
+			</div>
+			<div class='width-100 clearfix bg-white bborder font-12rem'>
+				<div class='width-90 pay-body'>
+					<img src="images/pay/icon_zhifubao.png" class='fleft icon_alipay'><span class='fleft'>支付宝支付<br/><span class='gray font-10rem'>支持有支付宝、网银的用户使用</span></span><img src="images/bet/true.png" class='fright icon_def'>
+				</div>
+			</div>
+			<script>
+				$(function() {
+					// 打勾切换
+					$('.icon_def').click(function() {
+						var filename_arr = $(this).attr('src').split('/');
+						if(filename_arr[2] == 'true.png') {
+							filename_arr[2] = 'true_sel.png';
+						} else {
+							filename_arr[2] = 'true.png';
+						}
+						$(this).attr('src', filename_arr.join('/'));
+					});
+				})
+			</script>
+			<div class='space_hx'></div><div class='space_hx'></div>
+			<div class='width-90 auto'><button class='submit-btn-red fillet-5' type='button' onclick='dumpUrl(this);' data='payorder_two.html'>确认支付</button></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>分享</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+//页面跳转
+function dumpUrl(obj) {
+	var url = $(obj).attr('data');
+	window.location.href=url;
+}
+</script>
+</head>
+<body style='background-color:#fff;'>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='more.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>更多</span></li>
+			<li class='nav-middle center fleft'>分享</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='share'>
+			<ul class='clearfix bborder'>
+				<li class='vihidden'>.</li><li><img src="images/share/qq.png"/></li><li class='vihidden'>.</li><li><img src="images/share/wechat.png"/></li><li class='vihidden'>.</li>
+			</ul>
+			<div class='space_hx'></div><div class='space_hx'></div>
+			<p class='center bmargin-3'>扫描二维码</p>
+			<div class='width-30 auto bmargin-3'><img src="images/share/barcode.png"/></div>
+			<p class='center'>下载手机APP链接：www.xxxxxx.com</p>
+		</div>
+	</div>
+</body>
+</html>

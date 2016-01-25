@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>工作提交</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$("li").click(function() { // 切换选项卡
+			$("li").addClass("bborder");
+			$(this).removeClass("bborder");
+			$("table").addClass("hidden");
+			$("table").eq($(this).index()).removeClass("hidden");
+		});
+		$(".type").click(function(){
+			$(".type").removeClass("sel");
+			$(this).addClass("sel");
+		});
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back"></div>
+	</div>
+	
+	<div class="main clearfix">
+		<div class="gongzuoadd">
+			<ul class="tborder center clearfix uf width-100">
+				<li class="fleft rborder uf-1">工作总结</li><li class="fleft bborder rborder uf-1">工作计划</li><li class="fleft bborder rborder uf-1">商 机</li><li class="fleft bborder rborder uf-1">事务汇报</li><li class="fleft bborder uf-1">考 勤</li>
+			</ul>
+			<table class="font-14rem width-100">
+				<tr><td class="width-5"></td><td><label class="fleft relative">类型：</label><select><option>选择类型</option><option>日</option><option>月</option><option>周</option><option>日</option><option>半月</option></select></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><label class="fleft relative">日期：</label><span class="fleft gray time">当日</span><span class="aborder seltime">选择日期</span></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">内容：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">数量：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">遇到问题：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">解决方案：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">建议意见：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">自我感悟：</label><textarea class="uf-1 font-14rem" rows="3"></textarea></div></td><td class="width-5"></td></tr>
+				<tr class="bborder"><td class="jg"></td></tr>
+				<tr><td colspan="3" class="center"><button>提交</button></td></tr>
+			</table>
+			<table class="font-14rem width-100 hidden">
+				<tr><td class="width-5"></td><td><label class="fleft relative">类型：</label><select><option>选择类型</option><option>日</option><option>月</option><option>周</option><option>日</option><option>半月</option></select></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><label class="fleft relative">日期：</label><span class="fleft gray time">当日</span><span class="aborder seltime">选择日期</span></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">计划内容：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">计划数量：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">遇到问题：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">解决方案：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">建议意见：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">自我感悟：</label><textarea class="uf-1 font-14rem" rows="3"></textarea></div></td><td class="width-5"></td></tr>
+				<tr class="bborder"><td class="jg"></td></tr>
+				<tr><td colspan="3" class="center"><button>提交</button></td></tr>
+			</table>
+			<table class="font-14rem width-100 hidden">
+				<tr><td class="width-5"></td><td><label class="fleft relative">日期：</label><span class="fleft gray time">当日</span><span class="aborder seltime">选择日期</span></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">描述：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">成效：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">我的看法：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><label class="fleft relative">上传图片：</label><input type="file"/></td><td class="width-5"></td></tr>
+				<tr class="bborder"><td class="jg"></td></tr>
+				<tr><td colspan="3" class="center"><button>提交</button></td></tr>
+			</table>
+			<table class="font-14rem width-100 hidden">
+				<tr><td class="width-5"></td><td><label class="fleft relative">日期：</label><span class="fleft gray time">当日</span><span class="aborder seltime">选择日期</span></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">地点：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">事件：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">我的看法：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><label class="fleft relative">上传图片：</label><input type="file"/></td><td class="width-5"></td></tr>
+				<tr class="bborder"><td class="jg"></td></tr>
+				<tr><td colspan="3" class="center"><button>提交</button></td></tr>
+			</table>
+			<table class="font-14rem width-100 hidden">
+				<tr><td class="width-5"></td><td><label class="fleft relative">项目：</label><select><option>请假</option><option>出差</option><option>调休</option><option>加班</option></select></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">开始时间：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">结束时间：</label><input type="text" class="uf-1 font-14rem"/></div></td><td class="width-5"></td></tr>
+				<tr><td class="width-5"></td><td><div class="width-100 uf"><label class="fleft relative">事由：</label><textarea class="uf-1 font-14rem" rows="3"></textarea></div></td><td class="width-5"></td></tr>
+				<tr class="bborder"><td class="jg"></td></tr>
+				<tr><td colspan="3" class="center"><button>提交</button></td></tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>银行卡信息修改</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+//页面跳转
+function dumpUrl(obj) {
+	var url = $(obj).attr('data');
+	window.location.href=url;
+}
+</script>
+</head>
+<body>
+	<div class='top-nav clearfix'>
+		<ul class='bg-red fleft width-100 white'>
+			<li class='nav-left fleft' onclick='dumpUrl(this);' data='myaccount.html'><img src='images/back.png' class='fleft icon-left'/><span class='fleft'>我的账户</span></li>
+			<li class='nav-middle center fleft'>银行卡信息补全</li>
+			<li class="nav-right center fright vihidden">保存</li>
+		</ul>
+	</div>
+	<div class='main'>
+		<div class='bankinfo_patch'>
+			<div class="width-100">
+				<div class='input-group clearfix'><input type='text' placeholder='银行名称' class='aborder width-100'/></div>
+				<div class='input-group clearfix'><input type='text' placeholder='开户行地址' class='aborder width-100'/></div>
+				<div class='input-group clearfix'><input type='text' placeholder='开户名' class='aborder width-100'/></div>
+				<div class='input-group clearfix'><input type='text' placeholder='银行卡账号' class='aborder width-100 fleft'/><p class='red bg-pink font-8rem str fleft width-100 relative'><span class='vihidden'>.</span><span class='center-str fleft absolute'>此注意：一万元及一等奖领奖必须核对的信息</span></p></div>
+				<div class='space_hx'></div>
+				<div class='input-group'><button class='submit-btn-red fillet-2' data='#' onclick='dumpUrl(this);'>完 成</button></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

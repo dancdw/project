@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>员工管理</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$("li").click(function() {
+			$("li").addClass("bborder");
+			$(this).removeClass("bborder");
+			$(".item-group").addClass("hidden");
+			$(".item-group").eq($(this).index()).removeClass("hidden");
+		});
+		$(".item").click(function() {
+			if( $(this).next().is(":hidden") ) {
+				$(this).children().eq(0).addClass("open");
+				$(this).next().show();
+			} else {
+				$(this).children().eq(0).removeClass("open");
+				$(this).next().hide();
+			}
+		});
+		/* $(document).on("touchstart", function(){// 文档完整高度 - 浏览器可视高度  = 文档顶部
+			if(document.body.scrollTop >= document.body.scrollHeight - document.body.clientHeight) {
+				load_data();
+				// 从这里开始请求数据
+			}
+		}); */
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+		<div class="uf aborder search fillet-5" style="width:90%">
+			<input type="text" class="fleft uf-1 border-0" /><span class="fleft icon-search"></span>
+		</div>
+	</div>
+	
+	<div class='main'>
+		<div class="yuangonggl">
+			<ul class="ul-tag tborder uf width-100">
+				<li class="fleft center rborder uf-1">行政部</li><li class="fleft center rborder bborder uf-1">财务部</li><li class="fleft center bborder rborder uf-1">销售部</li><li class="fleft center bborder uf-1">生产部</li>
+			</ul>
+			<table class="width-100 font-12rem center item-group">
+				<tr class="item">
+					<td>张一</td><td>男</td><td>行政职位</td><td>13417592535</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>张二</td><td>女</td><td>行政职位</td><td>13417592534</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>张三</td><td>男</td><td>行政职位</td><td>13417592533</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="width-100 font-12rem center item-group hidden">
+				<tr class="item">
+					<td>张4</td><td>男</td><td>财务职位</td><td>13417592535</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>张5</td><td>女</td><td>财务职位</td><td>13417592534</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>张6</td><td>男</td><td>财务职位</td><td>13417592533</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="width-100 font-12rem center item-group hidden">
+				<tr class="item">
+					<td>张7</td><td>男</td><td>销售职位</td><td>13417592535</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>张8</td><td>女</td><td>销售职位</td><td>13417592534</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>张9</td><td>男</td><td>销售职位</td><td>13417592533</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="width-100 font-12rem center item-group hidden">
+				<tr class="item">
+					<td>张10</td><td>男</td><td>生产职位</td><td>13417592535</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>张11</td><td>女</td><td>生产职位</td><td>13417592534</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>张12</td><td>男</td><td>生产职位</td><td>13417592533</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-12rem width-100" >
+							<tr><td><label onclick="dumpUrl(this);" url-data="jibenzl.html">基本资料</label></td><td><label onclick="dumpUrl(this);" url-data="yuangonggj.html">员工轨迹</label></td><td><label onclick="dumpUrl(this);" url-data="duigongzm.html">对公账目</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="kehuzl.html">客户资料</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuojh.html">工作计划</label></td><td><label onclick="dumpUrl(this);" url-data="gongzuozj.html">工作总结</label></td></tr>
+							<tr><td><label onclick="dumpUrl(this);" url-data="shangjisb.html">商机上报</label></td><td><label onclick="dumpUrl(this);" url-data="shiwuhb.html">事务汇报</label></td><td><label onclick="dumpUrl(this);" url-data="checking.html">考&#160;&#160;&#160;&#160;&#160;&#160;&#160;勤</label></td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

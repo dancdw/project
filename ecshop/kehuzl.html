@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>客户资料</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function() {
+		$(".item").click(function() {
+			if( $(this).next().is(":hidden") ) {
+				$(this).children().eq(0).addClass("open");
+				$(this).next().show();
+			} else {
+				$(this).children().eq(0).removeClass("open");
+				$(this).next().hide();
+			}
+		});
+		/* $(document).on("touchstart", function(){// 文档完整高度 - 浏览器可视高度  = 文档顶部
+			if(document.body.scrollTop >= document.body.scrollHeight - document.body.clientHeight) {
+				load_data();
+				// 从这里开始请求数据
+			}
+		}); */
+	})
+</script>
+</head>
+<body>
+	<div class='top-nav width-95 auto clearfix'>
+		<div class="icon-back fleft"></div>
+	</div>
+	
+	<div class='main'>
+		<div class="kehuzl">
+			<table class="width-100 font-10rem center item-group">
+				<caption class="bborder tborder font-14rem fweight">客户资料</caption>
+				<tr class="item">
+					<td>蓝天木业</td><td>张生</td><td>13417583757</td><td>批发商</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-10rem width-100" >
+							<tr><td><label>座机：</label>0797-8211777</td><td><label>星级：</label><img src="images/public/star_solid.png"/><img src="images/public/star_solid.png"/><img src="images/public/star_solid.png"/><img src="images/public/star_solid.png"/><img src="images/public/star_viod.png"/></td></tr>
+							<tr><td><label>区域地址：</label>江西省赣州市南康区</td><td><label>描述：</label></td></tr>
+							<tr><td><label>详细地址：</label>江西省赣州市南康区宏泰家具市场A8栋208</td><td></td></tr>
+							<tr><td colspan="2"><img src="images/1.jpg"/><img src="images/1.jpg"/><img src="images/1.jpg"/></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>飞翔木业</td><td>张生</td><td>13417583757</td><td>批发商</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-10rem width-100" >
+							<tr><td><label>座机：</label>0797-8211777</td><td><label>星级：</label><img src="images/public/star_solid.png"/><img src="images/public/star_solid.png"/><img src="images/public/star_solid.png"/><img src="images/public/star_solid.png"/><img src="images/public/star_viod.png"/></td></tr>
+							<tr><td><label>区域地址：</label>江西省赣州市南康区</td><td><label>描述：</label></td></tr>
+							<tr><td><label>详细地址：</label>江西省赣州市南康区宏泰家具市场A8栋208</td><td></td></tr>
+							<tr><td colspan="2"><img src="images/1.jpg"/><img src="images/1.jpg"/><img src="images/1.jpg"/></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>狮子木业</td><td>张生</td><td>13417583757</td><td>家具店</td>
+				</tr>
+				<tr class="item-child bborder">
+					<td colspan="4">
+						<table class="font-10rem width-100" >
+							<tr><td><label>座机：</label>0797-8211777</td><td><label>星级：</label><img src="images/public/star_solid.png"/><img src="images/public/star_solid.png"/><img src="images/public/star_solid.png"/><img src="images/public/star_solid.png"/><img src="images/public/star_viod.png"/></td></tr>
+							<tr><td><label>区域地址：</label>江西省赣州市南康区</td><td><label>描述：</label></td></tr>
+							<tr><td><label>详细地址：</label>江西省赣州市南康区宏泰家具市场A8栋208</td><td></td></tr>
+							<tr><td colspan="2"><img src="images/1.jpg"/><img src="images/1.jpg"/><img src="images/1.jpg"/></td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
